@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema para Gestão de Torneios, Copas & Ligas Esportivas | Joga</title>
+  <meta name="description" content="Software profissional para organização de torneios de futebol, society e futsal: inscrições online, chaveamento mata-mata automático, súmula digital ao vivo e portal do torcedor.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-brand">
+          <img src="assets/joga-logo.png" alt="Joga" class="brand-logo-img">
+        </a>
+
+        <ul class="nav-links">
+          <li class="nav-dropdown">
+            <a href="javascript:void(0)" class="nav-link active">Soluções ▾</a>
+            <div class="dropdown-menu">
+              <a href="escolas.html" class="dropdown-item">
+                <span class="dropdown-item-icon">⚽</span>
+                <div class="dropdown-item-text">
+                  <strong>Escolas & Clubes</strong>
+                  <small>Alunos, chamadas, contratos e e-commerce</small>
+                </div>
+              </a>
+              <a href="quadras.html" class="dropdown-item">
+                <span class="dropdown-item-icon">🏟️</span>
+                <div class="dropdown-item-text">
+                  <strong>Quadras & Arenas</strong>
+                  <small>Grade semanal 24/7 e reservas PIX</small>
+                </div>
+              </a>
+              <a href="torneios.html" class="dropdown-item">
+                <span class="dropdown-item-icon">🏆</span>
+                <div class="dropdown-item-text">
+                  <strong>Torneios & Copas</strong>
+                  <small>Chaveamento mata-mata e súmula digital</small>
+                </div>
+              </a>
+              <a href="atletas.html" class="dropdown-item">
+                <span class="dropdown-item-icon">📱</span>
+                <div class="dropdown-item-text">
+                  <strong>App dos Atletas</strong>
+                  <small>Mapa de calor, notas FIFA e smartwatch</small>
+                </div>
+              </a>
+              <a href="watches.html" class="dropdown-item">
+                <span class="dropdown-item-icon">⌚</span>
+                <div class="dropdown-item-text">
+                  <strong>Relógios Compatíveis</strong>
+                  <small>watchOS, Wear OS e importação via GPX</small>
+                </div>
+              </a>
+              <a href="escolas.html#ecommerce-escolas" class="dropdown-item">
+                <span class="dropdown-item-icon">🛍️</span>
+                <div class="dropdown-item-text">
+                  <strong>Loja Oficial & Uniformes</strong>
+                  <small>Venda de kits oficiais e materiais</small>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li><a href="casos-de-sucesso.html" class="nav-link">Casos de Sucesso</a></li>
+          <li><a href="index.html#pricing" class="nav-link">Planos & Preços</a></li>
+          <li><a href="#faq-torneios" class="nav-link">FAQ</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="https://beta.joga.cloud" target="_blank" class="btn btn-sm btn-outline-blue">Entrar no Sistema</a>
+          <button class="btn btn-sm btn-lime" data-open-lead-modal>Solicitar Demonstração</button>
+          
+          <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-original">
+    <div class="container">
+      <div class="hero-badge">PLATAFORMA PROFISSIONAL DE CAMPEONATOS & COPAS</div>
+      <h1 class="hero-title">Organize campeonatos memoráveis com <span class="text-lime">súmula digital e mata-mata ao vivo</span></h1>
+      <p class="hero-subtitle">
+        Do regulamento e inscrições com taxa via PIX até a premiação dos campeões. Tabelas com desempate oficial, geração de chaves eliminatórias em 1 clique e acompanhamento em tempo real para pais e torcedores pelo celular.
+      </p>
+
+      <div class="hero-audience-box">
+        <button class="btn btn-lg btn-lime" data-open-lead-modal>Agendar Demonstração Gratuita</button>
+        <a href="#chaveamento-interativo" class="btn btn-lg btn-outline-blue">Ver Chaveamento Mata-Mata ↓</a>
+      </div>
+
+      <div class="hero-price-chip">
+        <span>A partir de R$ 149 por torneio • Sem limite de times ou atletas • Súmula digital em tempo real</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAVEAMENTO & SÚMULA SHOWCASE -->
+  <section class="section section-bg-white" id="chaveamento-interativo">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-blue">TECNOLOGIA PARA MESÁRIOS E TORCEDORES</span>
+        <h2 class="section-title">Chega de pranchetas de papel e <span class="text-lime">planilhas confusas</span></h2>
+        <p class="section-subtitle">Chaveamento automático da Série Ouro e Prata gerado na hora, com súmula digital minuto a minuto atualizada ao vivo na palma da mão.</p>
+      </div>
+
+      <div class="tournament-bracket-board">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 24px;">
+          <div>
+            <h3 style="font-size: 1.4rem; color: var(--joga-navy); margin-bottom: 4px;">🏆 Copa Joga Champions Sub-13 • Série Ouro</h3>
+            <p style="color: var(--joga-gray-600); font-size: 0.9rem;">Classificação oficial atualizada após a 3ª rodada da fase de grupos</p>
+          </div>
+          <div class="court-filter-tabs" style="margin-bottom: 0;">
+            <button class="court-filter-btn active">🥇 Série Ouro</button>
+            <button class="court-filter-btn">🥈 Série Prata</button>
+            <button class="court-filter-btn">⏱️ Súmula Ao Vivo</button>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 30px; align-items: start;">
+          <!-- Bracket Tree -->
+          <div class="bracket-container" style="grid-template-columns: 1fr 1fr 1fr;">
+            <!-- Quartas -->
+            <div class="bracket-matches-col">
+              <div class="bracket-round-header">Quartas de Final</div>
+              
+              <div class="bracket-match-card">
+                <div class="bracket-match-team winner">
+                  <span>⚽ Barcelona Academy</span>
+                  <span class="bracket-match-score">3</span>
+                </div>
+                <div class="bracket-match-team">
+                  <span>⚪ Meninos da Vila</span>
+                  <span class="bracket-match-score">1</span>
+                </div>
+              </div>
+
+              <div class="bracket-match-card">
+                <div class="bracket-match-team winner">
+                  <span>🔵 Grêmio Esporte</span>
+                  <span class="bracket-match-score">2</span>
+                </div>
+                <div class="bracket-match-team">
+                  <span>🟢 Chape Futsal</span>
+                  <span class="bracket-match-score">0</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Semifinal -->
+            <div class="bracket-matches-col">
+              <div class="bracket-round-header">Semifinal</div>
+              
+              <div class="bracket-match-card" style="border: 2px solid var(--joga-blue);">
+                <div class="bracket-match-team winner">
+                  <span>⚽ Barcelona Academy</span>
+                  <span class="bracket-match-score">2</span>
+                </div>
+                <div class="bracket-match-team">
+                  <span>🔵 Grêmio Esporte</span>
+                  <span class="bracket-match-score">1</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Grande Final -->
+            <div class="bracket-matches-col">
+              <div class="bracket-round-header" style="border-bottom-color: #f59e0b;">Grande Final 🏆</div>
+              
+              <div class="bracket-match-card" style="background: #fffbeb; border: 2px solid #f59e0b;">
+                <div class="bracket-match-team" style="font-size: 0.95rem;">
+                  <span>⚽ Barcelona Academy</span>
+                  <span class="bracket-match-score">-</span>
+                </div>
+                <div class="bracket-match-team" style="font-size: 0.95rem;">
+                  <span>🔴 Santos Prime</span>
+                  <span class="bracket-match-score">-</span>
+                </div>
+                <div style="text-align: center; margin-top: 8px; font-size: 0.75rem; color: #b45309; font-weight: 700;">
+                  HOJE • 18:30 • QUADRA 1
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Súmula Digital Ao Vivo Box -->
+          <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px;">
+              <strong style="font-size: 1rem; color: var(--joga-navy);">Súmula Digital Ao Vivo</strong>
+              <span style="background: #fee2e2; color: #b91c1c; font-size: 0.75rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; display: flex; align-items: center; gap: 4px;">
+                <span style="width: 6px; height: 6px; background: #b91c1c; border-radius: 50%; display: inline-block;"></span> AO VIVO
+              </span>
+            </div>
+
+            <div style="text-align: center; margin-bottom: 16px; background: white; padding: 12px; border-radius: 6px; border: 1px solid #e2e8f0;">
+              <div style="font-size: 0.85rem; color: #64748b; font-weight: 600;">Semifinal • 2º Tempo (49')</div>
+              <div style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--joga-dark); margin: 4px 0;">
+                Barcelona 2 x 1 Grêmio
+              </div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              <div class="sumula-timeline-item">
+                <span class="sumula-time-badge">12'</span>
+                <div>⚽ <strong>Gol:</strong> Lucas Silva (#10 - Barcelona)</div>
+              </div>
+              <div class="sumula-timeline-item">
+                <span class="sumula-time-badge">24'</span>
+                <div>🟨 <strong>Cartão:</strong> Gabriel P. (#4 - Grêmio)</div>
+              </div>
+              <div class="sumula-timeline-item">
+                <span class="sumula-time-badge">38'</span>
+                <div>⚽ <strong>Gol:</strong> Matheus Costa (#9 - Grêmio)</div>
+              </div>
+              <div class="sumula-timeline-item" style="border-bottom: none; background: #f0fdf4; padding: 8px; border-radius: 4px;">
+                <span class="sumula-time-badge" style="color: #15803d;">49'</span>
+                <div>⚽ <strong>GOL DA VITÓRIA:</strong> Lucas Silva (#10)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 PILARES DE RECURSOS PARA TORNEIOS -->
+  <section class="section section-bg-gray">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-blue">RECURSOS NATIVOS</span>
+        <h2 class="section-title">Tudo o que você precisa para rodar <span class="text-lime">um torneio profissional</span></h2>
+        <p class="section-subtitle">Economize até 40 horas de trabalho manual por campeonato e ofereça uma experiência de Copa do Mundo para atletas, comissões e familiares.</p>
+      </div>
+
+      <div class="pillars-six-grid">
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">📝</div>
+          <h4>Inscrições Online com PIX</h4>
+          <p>Crie a página pública do torneio em minutos. Os capitães inscrevem a equipe, anexam documentos dos atletas e pagam a taxa de inscrição no PIX com baixa automática.</p>
+        </div>
+
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">🔀</div>
+          <h4>Chaveamento em 1 Clique</h4>
+          <p>Chega de desenhar chaveamento no papel! Sorteie grupos equilibrados e gere a árvore mata-mata das Séries Ouro, Prata e Repescagem automaticamente.</p>
+        </div>
+
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">⏱️</div>
+          <h4>Súmula Digital no Tablet</h4>
+          <p>O mesário lança gols, assistências, cartões amarelos e vermelhos na beira do campo pelo tablet ou celular. O resultado sobe na hora para o portal do torneio.</p>
+        </div>
+
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">📲</div>
+          <h4>Portal Público do Torcedor</h4>
+          <p>Pais, torcedores e atletas acompanham a classificação em tempo real, artilharia do campeonato, defesa menos vazada e data dos próximos jogos pelo celular.</p>
+        </div>
+
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">⚖️</div>
+          <h4>Critérios Oficiais de Desempate</h4>
+          <p>Pontos, Vitórias, Saldo de Gols, Gols Pró, Confronto Direto e até Fair Play (menos cartões). O sistema desempata grupos segundo o regulamento sem erros humanos.</p>
+        </div>
+
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">🌟</div>
+          <h4>Estatísticas & Craque da Rodada</h4>
+          <p>Integração com o App do Atleta Joga. Destaque o artilheiro, melhor goleiro, MVP da rodada e monte a seleção do torneio para engajar nas redes sociais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE: SÚMULA DIGITAL & ANÁLISE TÁTICA -->
+  <section class="section section-bg-light" style="padding-top: 10px; padding-bottom: 40px;">
+    <div class="container">
+      <div class="mockup-browser-frame">
+        <div class="mockup-browser-header">
+          <div class="mockup-browser-dots">
+            <span class="mockup-dot red"></span>
+            <span class="mockup-dot yellow"></span>
+            <span class="mockup-dot green"></span>
+          </div>
+          <div class="mockup-browser-url">https://admin.joga.cloud/torneios/sumula-scout-aovivo</div>
+        </div>
+        <img src="https://static.wixstatic.com/media/4e210c_01db40b0c8b04ca89436c6362d981627~mv2.png" alt="Súmula Digital e Análise Tática de Partidas Joga" class="mockup-screen-img" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- PASSO A PASSO COMO FUNCIONA -->
+  <section class="section section-bg-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-blue">FLUXO SIMPLIFICADO</span>
+        <h2 class="section-title">Como organizar seu campeonato <span class="text-lime">em 4 passos</span></h2>
+        <p class="section-subtitle">Prático, intuitivo e com total suporte da equipe técnica do Joga.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 30px; position: relative;">
+          <div style="font-family: var(--font-heading); font-size: 3rem; font-weight: 800; color: var(--joga-lime); line-height: 1; margin-bottom: 12px;">01</div>
+          <h4 style="font-size: 1.2rem; color: var(--joga-navy); margin-bottom: 10px;">Crie a Página da Copa</h4>
+          <p style="color: var(--joga-gray-600); font-size: 0.9rem;">Defina as categorias (Sub-11, Sub-13, Adulto), regulamento, valor da inscrição e datas dos jogos.</p>
+        </div>
+
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 30px; position: relative;">
+          <div style="font-family: var(--font-heading); font-size: 3rem; font-weight: 800; color: var(--joga-lime); line-height: 1; margin-bottom: 12px;">02</div>
+          <h4 style="font-size: 1.2rem; color: var(--joga-navy); margin-bottom: 10px;">Receba as Inscrições</h4>
+          <p style="color: var(--joga-gray-600); font-size: 0.9rem;">Os times preenchem a ficha pelo link, cadastram os atletas e pagam via PIX com baixa em 0.8s.</p>
+        </div>
+
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 30px; position: relative;">
+          <div style="font-family: var(--font-heading); font-size: 3rem; font-weight: 800; color: var(--joga-lime); line-height: 1; margin-bottom: 12px;">03</div>
+          <h4 style="font-size: 1.2rem; color: var(--joga-navy); margin-bottom: 10px;">Sorteie e Inicie</h4>
+          <p style="color: var(--joga-gray-600); font-size: 0.9rem;">Gere a tabela de jogos e horários. O sistema avisa os técnicos automaticamente sobre local e horário.</p>
+        </div>
+
+        <div style="background: #f8fafc; border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 30px; position: relative;">
+          <div style="font-family: var(--font-heading); font-size: 3rem; font-weight: 800; color: var(--joga-lime); line-height: 1; margin-bottom: 12px;">04</div>
+          <h4 style="font-size: 1.2rem; color: var(--joga-navy); margin-bottom: 10px;">Súmula & Final</h4>
+          <p style="color: var(--joga-gray-600); font-size: 0.9rem;">Acompanhe o mata-mata, artilheiros e premiação ao vivo, gerando certificados e posts para redes sociais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANO TORNEIOS -->
+  <section class="section section-bg-gray" id="planos-torneios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-blue">VALOR ACESSÍVEL</span>
+        <h2 class="section-title">Investimento por Campeonato</h2>
+        <p class="section-subtitle">Contrate sob demanda para uma copa específica ou adquira pacotes anuais para sua liga ou federação.</p>
+      </div>
+
+      <div style="max-width: 540px; margin: 0 auto; background: white; border: 2px solid var(--joga-blue); border-radius: var(--radius-xl); padding: 40px; box-shadow: 0 15px 35px rgba(18,11,48,0.08); text-align: center;">
+        <span class="badge-blue" style="padding: 6px 16px; font-weight: 700; border-radius: 20px; font-size: 0.85rem; text-transform: uppercase;">Módulo Torneios & Copas</span>
+        <div style="margin: 24px 0 16px;">
+          <span style="font-family: var(--font-heading); font-size: 3.5rem; font-weight: 800; color: var(--joga-dark);">R$ 149</span>
+          <span style="color: #666; font-size: 1.1rem;">/torneio</span>
+        </div>
+        <p style="color: var(--joga-gray-600); font-size: 0.95rem; margin-bottom: 24px;">Equipes ilimitadas • Súmula digital • Portal do torcedor</p>
+
+        <ul style="list-style: none; text-align: left; display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; font-size: 0.95rem; color: var(--joga-gray-800);">
+          <li>✓ Criação de página pública e inscrições online</li>
+          <li>✓ Recebimento de taxa de inscrição via PIX com baixa automática</li>
+          <li>✓ Sorteio de grupos e chaveamento mata-mata automático</li>
+          <li>✓ Séries Ouro, Prata e Repescagem simultâneas</li>
+          <li>✓ Súmula digital minuto a minuto ao vivo</li>
+          <li>✓ Ranking de artilharia, cartões e melhor defesa</li>
+          <li>✓ Portal do torcedor acessível em qualquer smartphone</li>
+          <li>✓ Suporte para mesários e organizadores</li>
+        </ul>
+
+        <button class="btn btn-lg btn-lime" style="width: 100%;" data-open-lead-modal>Contratar para Meu Torneio</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ TORNEIOS -->
+  <section class="section section-bg-white" id="faq-torneios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-blue">TIRE SUAS DÚVIDAS</span>
+        <h2 class="section-title">Perguntas Frequentes sobre Torneios</h2>
+      </div>
+
+      <div class="faq-accordion-wrap">
+        <div class="faq-item active">
+          <button class="faq-question-btn">
+            <span>1. Existe limite de equipes, atletas ou categorias por campeonato?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box" style="display: block;">
+            Não! O sistema suporta desde pequenos festivais com 4 equipes até grandes copas com mais de 64 times divididos em múltiplas categorias (Sub-9, Sub-11, Sub-13, Adulto, Veterano, Feminino).
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>2. Como os mesários operam a súmula digital durante os jogos?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            A súmula digital foi desenvolvida com botões grandes e interface ultra rápida para ser usada em qualquer smartphone ou tablet simples, mesmo com internet 4G/3G oscilando. O mesário marca o gol com 2 toques e o cronômetro registra o minuto exato da jogada.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>3. Os pais e torcedores precisam baixar aplicativo para ver a classificação?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            Não! O torneio ganha uma página web pública e responsiva. O torcedor só precisa abrir o link pelo navegador do celular ou escanear o QR Code impresso no cartaz da arena para ver a tabela, artilharia e próximos confrontos na hora.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>4. O sistema gera automaticamente as chaves da Série Ouro e Série Prata?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            Sim! Ao final da fase de grupos, o sistema separa os primeiros colocados para a Série Ouro e os demais para a Série Prata ou Bronze, cruzando 1º do Grupo A contra 2º do Grupo B segundo o regulamento cadastrado, sem risco de montagens erradas de chaveamento.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>5. Sou dono de escola ou arena. O módulo de torneios já vem integrado?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            Sim! Se você já utiliza o Joga em sua escola ou arena, você pode ativar o módulo de torneios diretamente pelo seu painel para rodar festivais internos, copas de fim de ano ou torneios abertos de final de semana aproveitando as mesmas quadras e cadastros de alunos.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section section-bg-dark" style="text-align: center;">
+    <div class="container">
+      <span class="section-badge badge-lime">COMECE HOJE MESMO</span>
+      <h2 class="section-title" style="color: white; margin-top: 12px;">Eleve o nível do seu campeonato esportivo</h2>
+      <p class="section-subtitle" style="max-width: 650px; margin: 0 auto 32px; color: #ccc;">
+        Fale com nossos especialistas em competições e receba uma demonstração de como configurar sua copa em menos de 15 minutos.
+      </p>
+      <button class="btn btn-lg btn-lime" data-open-lead-modal>Solicitar Demonstração Gratuita</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/joga-logo-white.png" alt="Joga" class="footer-logo-img">
+          <p>O sistema operacional inteligente para escolas de futebol, arenas de quadras e organizadores de torneios que profissionaliza sua gestão e valoriza o esporte.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Soluções</h5>
+          <ul class="footer-links">
+            <li><a href="escolas.html">Escolas & Clubes</a></li>
+            <li><a href="quadras.html">Arenas & Quadras</a></li>
+            <li><a href="torneios.html">Torneios & Copas</a></li>
+            <li><a href="atletas.html">App do Atleta</a></li>
+            <li><a href="casos-de-sucesso.html">Casos de Sucesso</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Institucional</h5>
+          <ul class="footer-links">
+            <li><a href="casos-de-sucesso.html">Casos de Sucesso</a></li>
+            <li><a href="index.html#pricing">Planos & Preços</a></li>
+            <li><a href="index.html#faq">Central de Ajuda (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contato & Suporte</h5>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/5548988358482" target="_blank">WhatsApp Comercial</a></li>
+            <li><a href="mailto:contato@wearejoga.com">contato@wearejoga.com</a></li>
+            <li>Florianópolis - SC - Brasil</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Joga Tecnologia Esportiva Ltda. Florianópolis - SC - Brasil</div>
+        <div>Segurança Clicksign ICP-Brasil • Pagamentos Integrados • Criptografia TLS 1.3</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LEAD CAPTURE MODAL -->
+  <div class="modal-backdrop" id="lead-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div class="modal-header">
+        <span class="section-badge badge-blue">DEMONSTRAÇÃO PERSONALIZADA</span>
+        <h3>Agende uma apresentação do Joga para seu Torneio</h3>
+        <p>Preencha os dados abaixo para receber uma demonstração prática do chaveamento automático e súmula digital.</p>
+      </div>
+
+      <form id="lead-form" class="lead-form">
+        <div class="form-group">
+          <label for="lead-name">Seu Nome Completo *</label>
+          <input type="text" id="lead-name" name="name" required placeholder="Ex: Roberto Carlos">
+        </div>
+
+        <div class="form-group">
+          <label for="lead-phone">WhatsApp com DDD *</label>
+          <input type="tel" id="lead-phone" name="phone" required placeholder="(11) 99999-9999">
+        </div>
+
+        <div class="form-group">
+          <label for="lead-email">E-mail Corporativo *</label>
+          <input type="email" id="lead-email" name="email" required placeholder="roberto@copasports.com.br">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="lead-role">Seu Perfil *</label>
+            <select id="lead-role" name="role" required>
+              <option value="Organizador de Torneios" selected>🏆 Organizador de Torneios / Copas</option>
+              <option value="Dono de Arena">🏟️ Dono de Arena / Complexo de Quadras</option>
+              <option value="Dono de Escola">⚽ Dono / Gestor de Escola de Futebol</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="lead-teams">Quantos Torneios / Equipes? *</label>
+            <select id="lead-teams" name="teams" required>
+              <option value="Até 8 equipes">Até 8 equipes</option>
+              <option value="8 a 24 equipes" selected>8 a 24 equipes</option>
+              <option value="Mais de 24 equipes">Mais de 24 equipes (Grande Copa)</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-lime btn-submit" id="btn-submit-lead">
+          <span>Solicitar Apresentação no WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

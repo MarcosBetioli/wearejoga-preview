@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>We Are Joga | Sistema Inteligente para Escolas de Futebol e Clubes</title>
+  <meta name="description" content="Um novo diferencial para seu clube ou escola. Sistema de gestão inteligente para escolas de futebol, cobranças automáticas no WhatsApp, contratos Clicksign, metodologia de treinos e app do atleta.">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.wearejoga.com/">
+  <meta property="og:title" content="We Are Joga | Sistema Inteligente para Escolas de Futebol">
+  <meta property="og:description" content="Resolva seu dia a dia com um sistema inteligente. Da gestão de atletas até o alto rendimento, a Joga é ideal para sua escola ou clube.">
+
+  <!-- Google Fonts: Rajdhani + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org FAQPage & SoftwareApplication JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "We Are Joga",
+    "applicationCategory": "SportsManagementApplication",
+    "operatingSystem": "Web, Android, iOS",
+    "description": "Sistema de gestão inteligente para escolas de futebol, clubes e arenas esportivas. Cobrança automática, contratos Clicksign no WhatsApp e aplicativo do atleta.",
+    "offers": {
+      "@type": "Offer",
+      "price": "250.00",
+      "priceCurrency": "BRL"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVBAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-brand">
+          <img src="assets/joga-logo.png" alt="Joga" class="brand-logo-img">
+        </a>
+
+        <ul class="nav-links">
+          <li class="nav-dropdown">
+            <a href="javascript:void(0)" class="nav-link">Soluções ▾</a>
+            <div class="dropdown-menu">
+              <a href="escolas.html" class="dropdown-item">
+                <span class="dropdown-item-icon">⚽</span>
+                <div class="dropdown-item-text">
+                  <strong>Escolas & Clubes</strong>
+                  <small>Alunos, chamadas, contratos e e-commerce</small>
+                </div>
+              </a>
+              <a href="quadras.html" class="dropdown-item">
+                <span class="dropdown-item-icon">🏟️</span>
+                <div class="dropdown-item-text">
+                  <strong>Quadras & Arenas</strong>
+                  <small>Grade semanal 24/7 e reservas PIX</small>
+                </div>
+              </a>
+              <a href="torneios.html" class="dropdown-item">
+                <span class="dropdown-item-icon">🏆</span>
+                <div class="dropdown-item-text">
+                  <strong>Torneios & Copas</strong>
+                  <small>Chaveamento mata-mata e súmula digital</small>
+                </div>
+              </a>
+              <a href="atletas.html" class="dropdown-item">
+                <span class="dropdown-item-icon">📱</span>
+                <div class="dropdown-item-text">
+                  <strong>App dos Atletas</strong>
+                  <small>Mapa de calor, notas FIFA e smartwatch</small>
+                </div>
+              </a>
+              <a href="watches.html" class="dropdown-item">
+                <span class="dropdown-item-icon">⌚</span>
+                <div class="dropdown-item-text">
+                  <strong>Relógios Compatíveis</strong>
+                  <small>watchOS, Wear OS e importação via GPX</small>
+                </div>
+              </a>
+              <a href="escolas.html#ecommerce-escolas" class="dropdown-item">
+                <span class="dropdown-item-icon">🛍️</span>
+                <div class="dropdown-item-text">
+                  <strong>Loja Oficial & Uniformes</strong>
+                  <small>Venda de kits oficiais e materiais</small>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li><a href="casos-de-sucesso.html" class="nav-link">Casos de Sucesso</a></li>
+          <li><a href="#pricing" class="nav-link">Planos & Preços</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="https://beta.joga.cloud" target="_blank" class="btn btn-sm btn-outline-blue">Entrar no App</a>
+          <button class="btn btn-sm btn-lime" data-open-lead-modal>Solicitar Demonstração</button>
+          
+          <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION (FAITHFUL TO ORIGINAL WE ARE JOGA)
+       ========================================================================== -->
+  <section class="hero-original">
+    <div class="container">
+      <div class="hero-badge">UM NOVO DIFERENCIAL PARA SEU CLUBE OU ESCOLA</div>
+      <h1 class="hero-title">
+        Resolva seu dia a dia com um <span>sistema inteligente para escolas e clubes</span>
+      </h1>
+      <p class="hero-subtitle">
+        Desde a gestão completa de atletas até o alto rendimento e o App do Atleta. A plataforma que elimina a inadimplência com régua no WhatsApp, contratos digitais Clicksign e controle de metodologia.
+      </p>
+
+      <!-- Dual Audience Selector (Original Core Feature) -->
+      <div class="hero-audience-box">
+        <a href="escolas.html" class="btn btn-lg btn-blue">👉 Sou gestor ou treinador</a>
+        <a href="atletas.html" class="btn btn-lg btn-lime">⚽ Sou atleta ou peladeiro</a>
+      </div>
+
+      <!-- Original Price Anchor -->
+      <div class="hero-price-chip">
+        <span>A partir de</span>
+        <strong>R$ 250/mês</strong>
+        <small style="color: #666;">(+ taxa de implementação • até 100 atletas)</small>
+        <a href="escolas.html" style="color: var(--joga-blue); font-weight: 700; margin-left: 8px;">Ver detalhes →</a>
+      </div>
+
+      <!-- REAL SYSTEM SCREENSHOT: ESCOLAS & CLUBES WEB DASHBOARD -->
+      <div class="mockup-browser-frame">
+        <div class="mockup-browser-header">
+          <div class="mockup-browser-dots">
+            <span class="mockup-dot red"></span>
+            <span class="mockup-dot yellow"></span>
+            <span class="mockup-dot green"></span>
+          </div>
+          <div class="mockup-browser-url">https://admin.joga.cloud/dashboard</div>
+        </div>
+        <img src="https://static.wixstatic.com/media/4e210c_4a8b641afdf14244a541fb6bb1c16c18~mv2.png" alt="Painel de Gestão Joga para Escolas e Clubes" class="mockup-screen-img" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HOMOLOGATED BRANDS STRIP
+       ========================================================================== -->
+  <section class="brands-strip">
+    <div class="container">
+      <div class="brands-strip-title">Grandes clubes e escolas confiam na Joga como diferencial</div>
+      <div style="max-width: 900px; margin: 0 auto 20px; text-align: center;">
+        <img src="https://static.wixstatic.com/media/4e210c_cfc123186dc24a678776dfe04a51dc88~mv2.png" alt="Clubes e parceiros homologados Joga" style="width: 100%; max-width: 820px; height: auto; display: block; margin: 0 auto 16px;" loading="lazy">
+      </div>
+      <div class="brands-logos-grid">
+        <span class="brand-pill">Boca Juniors (Escola de Futebol)</span>
+        <span class="brand-pill">Escola Furacão (Athletico Paranaense)</span>
+        <span class="brand-pill">Santos FC (Meninos da Vila)</span>
+        <span class="brand-pill">Magnus Futsal School</span>
+        <span class="brand-pill">Grêmio (Imperatriz/MA)</span>
+        <span class="brand-pill">Torino Academy</span>
+        <span class="brand-pill">XV de Piracicaba</span>
+        <span class="brand-pill">NB Futebol</span>
+        <span class="brand-pill">ACBF Futsal</span>
+        <span class="brand-pill">FutTalents</span>
+        <span class="brand-pill">Náutico</span>
+        <span class="brand-pill">Manaus FC</span>
+        <span class="brand-pill">Operário Ferroviário</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ORIGINAL 6 VALUE PILLARS (THE CORE OF WE ARE JOGA)
+       ========================================================================== -->
+  <section class="section section-bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-blue">RECURSOS ESSENCIAIS</span>
+        <h2 class="section-title">O que torna a Joga essencial para sua escola</h2>
+        <p class="section-subtitle">Tecnologia desenvolvida especificamente para a realidade de escolinhas de esportes e clubes no Brasil.</p>
+      </div>
+
+      <div class="pillars-six-grid">
+        <!-- 1 -->
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">💳</div>
+          <h4>Cobranças no WhatsApp & Cartão</h4>
+          <p>Cobranças online via PIX dinâmico, cartão e boleto com régua automática de lembretes e relatórios de inadimplência em tempo real.</p>
+        </div>
+
+        <!-- 2 -->
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">📋</div>
+          <h4>Controle de Metodologia</h4>
+          <p>Registro de treinos, objetivos pedagógicos por faixa etária e banco central de exercícios para padronizar a comissão técnica.</p>
+        </div>
+
+        <!-- 3 -->
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">🎓</div>
+          <h4>Avaliação Validada</h4>
+          <p>Método de avaliação técnica, tática e física validado cientificamente em conjunto com times profissionais e universidades.</p>
+        </div>
+
+        <!-- 4 -->
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">🧠</div>
+          <h4>Games de Tomada de Decisão</h4>
+          <p>Aulas e jogos interativos que desafiam as escolhas do atleta em campo e aceleram o aprendizado cognitivo dos alunos.</p>
+        </div>
+
+        <!-- 5 -->
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">📊</div>
+          <h4>Boletim Mensal do Atleta</h4>
+          <p>Boletim digital com evidências e registros de esforço, presença e evolução técnica que encanta os pais a cada mês.</p>
+        </div>
+
+        <!-- 6 -->
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">✍️</div>
+          <h4>Contratos Digitais Clicksign</h4>
+          <p>Assinatura de matrículas direto pelo WhatsApp com validade jurídica formal ICP-Brasil e cofre digital de documentos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       JOGA ESCOLAS - THE FLAGSHIP SOLUTION
+       ========================================================================== -->
+  <section class="section section-bg-white" id="joga-escolas">
+    <div class="container">
+      <div class="escolas-feature-box">
+        <div>
+          <span class="section-badge badge-lime">O PRINCIPAL: JOGA ESCOLAS</span>
+          <h2 style="font-size: 2.2rem; text-transform: uppercase; margin-bottom: 16px;">
+            Faça a gestão completa da sua escola, atletas e equipes em um único lugar
+          </h2>
+          <p style="color: var(--joga-gray-600); font-size: 1.05rem; margin-bottom: 20px;">
+            Para quem quer crescer sua escolinha de futebol com menor esforço operacional e máxima retenção de alunos.
+          </p>
+
+          <div class="checklist-grid">
+            <div class="checklist-item"><span class="check">✓</span> <span>Painel de indicadores gerenciais</span></div>
+            <div class="checklist-item"><span class="check">✓</span> <span>Gestão administrativa e financeira</span></div>
+            <div class="checklist-item"><span class="check">✓</span> <span>Turmas, atletas e colaboradores ilimitados</span></div>
+            <div class="checklist-item"><span class="check">✓</span> <span>Cobrança online com PIX e cartão</span></div>
+            <div class="checklist-item"><span class="check">✓</span> <span>Régua automática de inadimplentes</span></div>
+            <div class="checklist-item"><span class="check">✓</span> <span>Lista de chamada via app pelo celular</span></div>
+            <div class="checklist-item"><span class="check">✓</span> <span>App para alunos, responsáveis e treinadores</span></div>
+            <div class="checklist-item"><span class="check">✓</span> <span>Imagens automáticas para o Instagram</span></div>
+            <div class="checklist-item"><span class="check">✓</span> <span>Contratos digitais no WhatsApp</span></div>
+            <div class="checklist-item"><span class="check">✓</span> <span>Suporte para aumentar mensalidades</span></div>
+          </div>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="escolas.html" class="btn btn-lg btn-blue">Ver Página Completa de Escolas →</a>
+            <button class="btn btn-lg btn-lime" data-open-lead-modal>Solicitar Demonstração</button>
+          </div>
+        </div>
+
+        <div style="background: var(--joga-gray-100); border-radius: var(--radius-xl); padding: 36px; border: 1.5px solid var(--border-color); text-align: center;">
+          <span class="section-badge badge-blue">A PARTIR DE R$ 250/MÊS</span>
+          <h3 style="font-size: 1.8rem; margin: 12px 0;">Plano Joga Escolas</h3>
+          <p style="color: var(--joga-gray-600); font-size: 0.95rem; margin-bottom: 24px;">
+            Suporte para até 100 atletas ativos. Mais de 150.000 alunos e atletas gerenciados com sucesso.
+          </p>
+
+          <div style="background: white; border-radius: var(--radius-lg); padding: 20px; text-align: left; box-shadow: var(--shadow-sm); margin-bottom: 24px; font-size: 0.9rem; color: var(--joga-gray-800); display: flex; flex-direction: column; gap: 8px;">
+            <div>💬 <em>"A facilidade do responsável assinar pelo WhatsApp e pagar no PIX acabou com os atrasos nas unidades do Boca Juniors."</em></div>
+            <strong style="color: var(--joga-blue); font-size: 0.85rem;">— Jorge Polletini (Boca Juniors Itupeva e Jundiaí)</strong>
+          </div>
+
+          <a href="casos-de-sucesso.html" style="color: var(--joga-blue); font-weight: 700; font-size: 0.95rem;">Ler todos os casos de sucesso reais →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ATLETAS & APP HIGHLIGHT
+       ========================================================================== -->
+  <section class="section section-bg-light" id="joga-atletas">
+    <div class="container">
+      <div class="atletas-app-box">
+        <div>
+          <span class="section-badge badge-lime">APLICATIVO PARA JOGADORES</span>
+          <h3>Leve o futebol dos seus alunos ao próximo nível com relógio ou celular</h3>
+          <p style="color: var(--joga-gray-400); font-size: 1.05rem; margin-bottom: 24px;">
+            Um aplicativo 5 estrelas que desafia e engaja os atletas. Estatísticas profissionais de GPS, mapa de calor, ritmo e rankings que fidelizam famílias na sua escola.
+          </p>
+
+          <div class="atletas-badges-grid">
+            <div class="atleta-feature-pill">
+              <strong>🗺️ Mapa de Calor</strong>
+              Áreas de maior movimentação no campo
+            </div>
+            <div class="atleta-feature-pill">
+              <strong>⭐ Nota Gráfico FIFA</strong>
+              Avaliação de intensidade e ritmo de jogo
+            </div>
+            <div class="atleta-feature-pill">
+              <strong>🏃 Velocidade & Arrancadas</strong>
+              Marcas de velocidade máxima e média
+            </div>
+            <div class="atleta-feature-pill">
+              <strong>⌚ Apple Watch & Galaxy</strong>
+              Rastreamento direto no relógio
+            </div>
+          </div>
+
+          <div class="store-buttons-box">
+            <a href="atletas.html" class="btn btn-lime">Conhecer o App do Atleta →</a>
+            <a href="https://play.google.com/store/apps/details?id=com.ionicframework.jogamaisperformance474307" target="_blank" class="store-btn">Play Store</a>
+            <a href="https://itunes.apple.com/br/app/joga-futebol-gps-joga-mais/id1219358060?mt=8" target="_blank" class="store-btn">App Store</a>
+          </div>
+        </div>
+
+        <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius-lg); padding: 32px; text-align: center;">
+          <img src="https://static.wixstatic.com/media/4e210c_47dac6f2a3d34541ad06a2def93c591a~mv2.png" alt="App Joga no Celular" style="width: 100%; max-width: 240px; height: auto; margin-bottom: 16px; filter: drop-shadow(0 12px 24px rgba(0,0,0,0.3));" loading="lazy">
+          <div style="font-family: var(--font-heading); font-size: 3.2rem; color: var(--joga-lime); font-weight: 800; line-height: 1;">+10.000</div>
+          <strong style="color: white; font-size: 1.1rem; display: block; margin: 8px 0;">Atletas ativos no aplicativo</strong>
+          <p style="color: var(--joga-gray-400); font-size: 0.9rem; margin-bottom: 20px;">
+            Peladeiros e alunos de escolinhas que comparam estatísticas, evoluem a tomada de decisão e acompanham seus boletins.
+          </p>
+          <a href="atletas.html#faq-atletas" class="btn btn-sm btn-outline-white">Dúvidas sobre o GPS e Celular →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EXPANDED ECOSYSTEM (ARENAS, TORNEIOS & LOJA DO BLUEPRINT)
+       ========================================================================== -->
+  <section class="section section-bg-white" id="ecossistema-expandido">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-blue">EXPANSÃO DO SEU NEGÓCIO ESPORTIVO</span>
+        <h2 class="section-title">Sua escola tem quadras, copas ou loja de uniformes?</h2>
+        <p class="section-subtitle">O Joga conecta tudo no mesmo sistema: aluguel de quadras, organização de campeonatos e e-commerce de materiais esportivos.</p>
+      </div>
+
+      <div class="pillars-six-grid">
+        <!-- Arenas -->
+        <div class="pillar-six-card" id="ecossistema-arenas">
+          <div class="pillar-six-icon">🏟️</div>
+          <h4>Arenas & Locação de Quadras</h4>
+          <p>Grade semanal interativa 24/7 com pagamento antecipado via PIX dinâmico, bloqueio automático e gestão de peladas fixas/mensalistas.</p>
+          <a href="quadras.html" style="color: var(--joga-blue); font-weight: 700; font-size: 0.85rem; display: block; margin-top: 12px;">Ver tela exclusiva de Arenas →</a>
+        </div>
+
+        <!-- Torneios -->
+        <div class="pillar-six-card" id="ecossistema-torneios">
+          <div class="pillar-six-icon">🏆</div>
+          <h4>Torneios, Copas & Ligas</h4>
+          <p>Chaveamento automático mata-mata (Série Ouro e Prata), classificação com critérios de desempate e súmula digital minuto a minuto ao vivo.</p>
+          <a href="torneios.html" style="color: var(--joga-blue); font-weight: 700; font-size: 0.85rem; display: block; margin-top: 12px;">Ver tela exclusiva de Torneios →</a>
+        </div>
+
+        <!-- Loja -->
+        <div class="pillar-six-card" id="ecossistema-loja">
+          <div class="pillar-six-icon">🛍️</div>
+          <h4>Loja Oficial & E-commerce</h4>
+          <p>Vitrine pública personalizada para vender kits de uniforme com grade de tamanhos (P/M/G/Infantil), controle de estoque e checkout integrado.</p>
+          <a href="#pricing" style="color: var(--joga-blue); font-weight: 700; font-size: 0.85rem; display: block; margin-top: 12px;">Vender uniformes online →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       WHATSAPP & CLICKSIGN SIMULATOR
+       ========================================================================== -->
+  <section class="section section-bg-dark" id="simulador">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 380px; gap: 50px; align-items: center;">
+        <div>
+          <span class="section-badge badge-lime">AUTOMAÇÃO EM AÇÃO</span>
+          <h2 class="section-title">Veja na prática como funciona a reserva e a assinatura digital</h2>
+          <p style="color: var(--joga-gray-400); font-size: 1.1rem; margin-bottom: 24px;">
+            Experimente na tela do smartphone ao lado o fluxo completo: o cliente recebe o PIX copia e cola, a confirmação em 0.8s e o contrato digital Clicksign para assinar pelo WhatsApp com validade jurídica.
+          </p>
+
+          <div style="background: rgba(255,255,255,0.06); border-left: 4px solid var(--joga-lime); padding: 16px; border-radius: 4px; margin-bottom: 24px; font-size: 0.95rem; color: #DDD;">
+            👉 <strong>Clique nos botões interativos no celular ao lado</strong> para testar a simulação!
+          </div>
+
+          <button class="btn btn-lg btn-lime" data-open-lead-modal>Quero essa tecnologia na minha escola</button>
+        </div>
+
+        <!-- Phone Mockup -->
+        <div style="background: #111; border-radius: 40px; border: 8px solid #222; box-shadow: 0 20px 50px rgba(0,0,0,0.6); overflow: hidden; width: 100%; max-width: 360px; margin: 0 auto;">
+          <div style="background: #075E54; color: white; padding: 14px; font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
+            <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--joga-blue); display: flex; align-items: center; justify-content: center; font-weight: 700;">J</div>
+            <div>
+              <strong>Escola Joga de Futebol</strong><br>
+              <small style="opacity: 0.8;">Atendimento Automatizado</small>
+            </div>
+          </div>
+
+          <div style="background: #ECE5DD; min-height: 440px; padding: 14px; display: flex; flex-direction: column; gap: 10px; font-size: 0.85rem;">
+            <!-- Step 1 -->
+            <div id="sim-step-1">
+              <div style="background: white; padding: 12px; border-radius: 8px; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">
+                Olá, Marcos! Sua mensalidade da turma <strong>Sub-13 (Quinta 19h)</strong> está disponível:
+                <div style="background: #F8F9FA; border: 1px dashed #00A884; padding: 10px; border-radius: 6px; margin: 8px 0; text-align: center;">
+                  <strong style="color: #075E54;">Valor: R$ 180,00</strong><br>
+                  <small style="color: #666;">Chave PIX Copia e Cola:</small>
+                  <div style="font-family: monospace; font-size: 0.7rem; background: #E8F5E9; padding: 4px; border-radius: 4px; margin: 4px 0;">00020126580014br.gov.bcb.pix0136...</div>
+                  <button id="btn-sim-pay" style="background: #00A884; color: white; border: none; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; cursor: pointer; margin-top: 4px;">Simular Pagamento PIX</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div id="sim-step-2" style="display: none;">
+              <div style="background: #DCF8C6; padding: 10px; border-radius: 8px; align-self: flex-end; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">
+                🎉 <strong>PAGAMENTO CONFIRMADO EM 0.8s!</strong><br>
+                Baixa automática sem precisar enviar comprovante.
+              </div>
+
+              <div style="background: white; padding: 12px; border-radius: 8px; box-shadow: 0 1px 2px rgba(0,0,0,0.1); margin-top: 8px;">
+                📄 Enviamos o <strong>Contrato de Matrícula 2026</strong> para assinatura digital:
+                <div style="border: 1px solid #DDD; padding: 8px; border-radius: 6px; margin: 6px 0; text-align: center;">
+                  <strong style="color: #3935F6; font-size: 0.8rem;">Clicksign ICP-Brasil</strong><br>
+                  <small>Validade jurídica formal no smartphone</small><br>
+                  <button id="btn-sim-sign" style="background: #3935F6; color: white; border: none; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; cursor: pointer; margin-top: 6px;">Assinar com 1 Toque</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div id="sim-step-3" style="display: none;">
+              <div style="background: #DCF8C6; padding: 10px; border-radius: 8px; align-self: flex-end; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">
+                ✅ <strong>CONTRATO ASSINADO COM SUCESSO!</strong><br>
+                <small>PDF arquivado no cofre do aluno.</small>
+              </div>
+              <div style="text-align: center; margin-top: 10px;">
+                <button id="btn-sim-reset" style="background: #FFF; border: 1px solid #999; padding: 4px 10px; border-radius: 12px; font-size: 0.75rem; cursor: pointer;">Reiniciar Simulação</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PRICING & ROI CALCULATOR
+       ========================================================================== -->
+  <section class="section section-bg-white" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-blue">VALOR TRANSPARENTE</span>
+        <h2 class="section-title">Planos Transparentes & Calculadora de Retorno</h2>
+        <p class="section-subtitle">Ajuste os controles abaixo para calcular o faturamento da sua operação e as horas economizadas.</p>
+      </div>
+
+      <!-- Calculator Box -->
+      <div style="background: var(--joga-gray-100); border-radius: var(--radius-xl); padding: 36px; border: 1.5px solid var(--border-color); margin-bottom: 48px;">
+        <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 36px; align-items: center;">
+          <div>
+            <div style="margin-bottom: 20px;">
+              <div style="display: flex; justify-content: space-between; font-weight: 600; margin-bottom: 6px;">
+                <span>Alunos Matriculados:</span>
+                <span id="val-students" style="color: var(--joga-blue); font-weight: 800;">150 alunos</span>
+              </div>
+              <input type="range" class="calc-slider" id="slider-students" min="20" max="600" step="10" value="150" style="width: 100%;">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <div style="display: flex; justify-content: space-between; font-weight: 600; margin-bottom: 6px;">
+                <span>Quadras / Campos:</span>
+                <span id="val-courts" style="color: var(--joga-blue); font-weight: 800;">2 quadras</span>
+              </div>
+              <input type="range" class="calc-slider" id="slider-courts" min="0" max="10" value="2" style="width: 100%;">
+            </div>
+
+            <div>
+              <div style="display: flex; justify-content: space-between; font-weight: 600; margin-bottom: 6px;">
+                <span>Torneios por ano:</span>
+                <span id="val-tournaments" style="color: var(--joga-blue); font-weight: 800;">2 copas</span>
+              </div>
+              <input type="range" class="calc-slider" id="slider-tournaments" min="0" max="10" value="2" style="width: 100%;">
+            </div>
+          </div>
+
+          <div style="background: var(--joga-dark); color: white; border-radius: var(--radius-lg); padding: 28px; text-align: center;">
+            <div style="font-size: 0.85rem; color: var(--joga-gray-400); text-transform: uppercase;">Faturamento Mensal Estimado</div>
+            <div id="res-revenue" style="font-family: var(--font-heading); font-size: 2.6rem; color: var(--joga-lime); font-weight: 800; margin: 4px 0 16px;">R$ 37.683</div>
+            
+            <div style="display: flex; justify-content: space-around; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 14px;">
+              <div>
+                <span style="font-size: 0.75rem; color: var(--joga-gray-400); display: block;">Horas Economizadas</span>
+                <strong id="res-hours" style="color: white; font-size: 1.2rem;">42 h/mês</strong>
+              </div>
+              <div>
+                <span style="font-size: 0.75rem; color: var(--joga-gray-400); display: block;">Taxa Inadimplência</span>
+                <strong style="color: var(--joga-lime); font-size: 1.2rem;">&lt; 2.8%</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing Cards -->
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+        <!-- Card 1: Escolas (Principal) -->
+        <div style="background: white; border: 2.5px solid var(--joga-blue); border-radius: var(--radius-xl); padding: 36px 28px; box-shadow: var(--shadow-md); position: relative;">
+          <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--joga-blue); color: white; padding: 4px 14px; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">PRINCIPAL: ESCOLAS & CLUBES</div>
+          <h4 style="font-size: 1.6rem; text-transform: uppercase; margin-bottom: 6px;">Joga Escolas</h4>
+          <p style="color: var(--joga-gray-600); font-size: 0.85rem; min-height: 40px;">Para escolinhas de futebol, academias e centros de treinamento.</p>
+          <div style="margin: 20px 0;">
+            <span style="font-family: var(--font-heading); font-size: 2.8rem; font-weight: 800; color: var(--joga-dark);">R$ 250</span>
+            <span style="color: #666; font-size: 0.9rem;">/mês (até 100 atletas)</span>
+          </div>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem; color: var(--joga-gray-800); margin-bottom: 28px;">
+            <li>✓ Contratos Clicksign no WhatsApp</li>
+            <li>✓ Cobranças PIX, cartão e boleto</li>
+            <li>✓ Chamada digital na beira do campo</li>
+            <li>✓ Boletim mensal do atleta</li>
+            <li>✓ Metodologia & App do Jogador</li>
+          </ul>
+          <a href="escolas.html" class="btn btn-blue" style="width: 100%;">Ver detalhes da Escola</a>
+        </div>
+
+        <!-- Card 2: Arenas & Quadras -->
+        <div style="background: white; border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: 36px 28px;">
+          <h4 style="font-size: 1.6rem; text-transform: uppercase; margin-bottom: 6px;">Arenas & Quadras</h4>
+          <p style="color: var(--joga-gray-600); font-size: 0.85rem; min-height: 40px;">Para complexos esportivos, society, beach tennis e padel.</p>
+          <div style="margin: 20px 0;">
+            <span style="font-family: var(--font-heading); font-size: 2.8rem; font-weight: 800; color: var(--joga-dark);">R$ 199</span>
+            <span style="color: #666; font-size: 0.9rem;">/mês</span>
+          </div>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem; color: var(--joga-gray-800); margin-bottom: 28px;">
+            <li>✓ Grade semanal interativa 24/7</li>
+            <li>✓ Pagamento PIX com baixa em 0.8s</li>
+            <li>✓ Gestão de mensalistas e peladas</li>
+            <li>✓ Analytics de ocupação e pico</li>
+          </ul>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <a href="quadras.html" class="btn btn-outline-blue" style="width: 100%; text-align: center;">Ver detalhes de Arenas</a>
+            <button class="btn btn-lime" style="width: 100%;" data-open-lead-modal>Contratar Arenas</button>
+          </div>
+        </div>
+
+        <!-- Card 3: Torneios & Copas -->
+        <div style="background: white; border: 1px solid var(--border-color); border-radius: var(--radius-xl); padding: 36px 28px;">
+          <h4 style="font-size: 1.6rem; text-transform: uppercase; margin-bottom: 6px;">Torneios & Copas</h4>
+          <p style="color: var(--joga-gray-600); font-size: 0.85rem; min-height: 40px;">Para ligas, federações e copas escolares ou amadoras.</p>
+          <div style="margin: 20px 0;">
+            <span style="font-family: var(--font-heading); font-size: 2.8rem; font-weight: 800; color: var(--joga-dark);">R$ 149</span>
+            <span style="color: #666; font-size: 0.9rem;">/torneio</span>
+          </div>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem; color: var(--joga-gray-800); margin-bottom: 28px;">
+            <li>✓ Chaveamento automático mata-mata</li>
+            <li>✓ Séries Ouro e Série Prata</li>
+            <li>✓ Súmula minuto a minuto ao vivo</li>
+            <li>✓ Portal do torcedor no celular</li>
+          </ul>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <a href="torneios.html" class="btn btn-outline-blue" style="width: 100%; text-align: center;">Ver detalhes de Torneios</a>
+            <button class="btn btn-lime" style="width: 100%;" data-open-lead-modal>Contratar Torneios</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EXPANDED COMPREHENSIVE FAQ (ORGANIZED BY 6 CATEGORIES)
+       ========================================================================== -->
+  <section class="section section-bg-light" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-blue">CENTRAL COMPLETA DE DÚVIDAS</span>
+        <h2 class="section-title">Perguntas Frequentes (FAQ)</h2>
+        <p class="section-subtitle">Tire todas as suas dúvidas sobre o funcionamento do Joga Escolas, WhatsApp, contratos, aplicativo de atletas e cobranças.</p>
+      </div>
+
+      <!-- FAQ Filter Tabs -->
+      <div class="faq-filter-tabs">
+        <button class="faq-tab-btn active" data-faq-cat="todas">Todas as Dúvidas</button>
+        <button class="faq-tab-btn" data-faq-cat="escolas">⚽ Escolas & Gestão</button>
+        <button class="faq-tab-btn" data-faq-cat="whatsapp">📱 WhatsApp & Clicksign</button>
+        <button class="faq-tab-btn" data-faq-cat="atletas">🏃 Atletas & App</button>
+        <button class="faq-tab-btn" data-faq-cat="arenas">🏟️ Arenas & Torneios</button>
+        <button class="faq-tab-btn" data-faq-cat="financeiro">💳 Preços & NFS-e</button>
+      </div>
+
+      <div class="faq-list">
+
+        <!-- Q1: Escolas -->
+        <div class="faq-item active" data-cat="escolas">
+          <button class="faq-question-btn">
+            <span>O que é o Joga e como ele atende escolas de futebol?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            O Joga é o sistema operacional mais completo do mercado esportivo brasileiro. Para escolas de futebol e clubes, ele centraliza a secretaria, cadastro de alunos, controle de turmas, chamada digital em campo pelo celular, padronização de metodologia de treinos, emissão de boletins mensais e automatização de mensalidades com régua de cobrança preventiva no WhatsApp.
+          </div>
+        </div>
+
+        <!-- Q2: Escolas -->
+        <div class="faq-item" data-cat="escolas">
+          <button class="faq-question-btn">
+            <span>Como os treinadores realizam a chamada de presença em campo?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            Cada professor ou treinador acessa o aplicativo no próprio smartphone e, em menos de 10 segundos, marca a presença dos alunos da turma na beira da quadra ou gramado. Os dados são sincronizados instantaneamente com o painel da secretaria, gerando alertas de alunos faltantes e relatórios automáticos anti-evasão.
+          </div>
+        </div>
+
+        <!-- Q3: WhatsApp & Contratos -->
+        <div class="faq-item" data-cat="whatsapp">
+          <button class="faq-question-btn">
+            <span>Como funciona a assinatura digital de contratos via WhatsApp (Clicksign)?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            O gestor cadastra a matrícula no sistema e, com 1 clique, dispara o link oficial de assinatura digital diretamente para o WhatsApp do pai ou responsável. O pai abre o link no celular e assina com o dedo na tela com validade jurídica formal (Clicksign / ICP-Brasil). O PDF assinado é arquivado automaticamente na pasta em nuvem do aluno, junto aos atestados médicos.
+          </div>
+        </div>
+
+        <!-- Q4: WhatsApp & Contratos -->
+        <div class="faq-item" data-cat="whatsapp">
+          <button class="faq-question-btn">
+            <span>Como a régua de cobrança automática no WhatsApp reduz a inadimplência?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            O sistema envia uma mensagem amigável no WhatsApp 3 dias antes do vencimento com o link seguro. No dia do vencimento, o responsável recebe a chave PIX Copia e Cola para pagamento instantâneo. Caso atrase, a régua calcula juros e multas automaticamente e notifica o devedor, tirando o peso emocional e constrangedor da secretaria.
+          </div>
+        </div>
+
+        <!-- Q5: Atletas & App -->
+        <div class="faq-item" data-cat="atletas">
+          <button class="faq-question-btn">
+            <span>Como funciona o aplicativo para os atletas e alunos?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            O atleta tem acesso a um app completo onde acompanha sua frequência, boletim mensal de evolução técnica e tática, notas de partidas e comunicados da escolinha. Além disso, para atletas que jogam partidas e peladas, o app rastreia mapa de calor via GPS, velocidade máxima em km/h, distância percorrida e gera um card com nota no padrão FIFA.
+          </div>
+        </div>
+
+        <!-- Q6: Atletas & App -->
+        <div class="faq-item" data-cat="atletas">
+          <button class="faq-question-btn">
+            <span>O app de performance funciona com smartwatch (Apple Watch e Samsung)?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            Sim! O aplicativo Joga é compatível com smartwatches Apple Watch (Series 2 em diante) e a linha Samsung Galaxy Watch. O atleta pode entrar em campo apenas com o relógio no pulso e sincronizar as estatísticas por Bluetooth ao final do jogo.
+          </div>
+        </div>
+
+        <!-- Q7: Arenas & Quadras -->
+        <div class="faq-item" data-cat="arenas">
+          <button class="faq-question-btn">
+            <span>Como funciona a grade semanal e o agendamento de quadras?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            Para complexos esportivos que alugam quadras de society, beach tennis ou padel, o Joga disponibiliza uma vitrine pública onde o próprio cliente escolhe o dia, quadra e horário e paga no PIX com QR Code dinâmico. O sistema confirma em 0.8s e bloqueia o horário na grade, evitando horários duplicados e cancelamentos em cima da hora.
+          </div>
+        </div>
+
+        <!-- Q8: Arenas & Torneios -->
+        <div class="faq-item" data-cat="arenas">
+          <button class="faq-question-btn">
+            <span>O módulo de torneios gera chaves de mata-mata automaticamente?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            Sim! O sistema organiza a fase de grupos, aplica critérios de desempate oficiais (Pontos, Saldo de Gols, Gols Pró, Vitórias) e desenha a árvore eliminatória da Série Ouro e Série Prata em 1 clique, gerando súmulas minuto a minuto com linha do tempo de gols e cartões ao vivo.
+          </div>
+        </div>
+
+        <!-- Q9: Financeiro & NFS-e -->
+        <div class="faq-item" data-cat="financeiro">
+          <button class="faq-question-btn">
+            <span>O sistema emite notas fiscais de serviço (NFS-e) em lote?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            Sim. O módulo fiscal do Joga comunica-se diretamente com as prefeituras homologadas em todo o país, permitindo gerar notas fiscais eletrônicas em lote para todas as mensalidades e serviços pagos no mês, com download de XML e PDF.
+          </div>
+        </div>
+
+        <!-- Q10: Financeiro & Preços -->
+        <div class="faq-item" data-cat="financeiro">
+          <button class="faq-question-btn">
+            <span>Qual é o valor do plano para escolas e como funciona a taxa de implementação?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            O plano **Joga Escolas Pro** inicia em **R$ 250/mês** para até 100 atletas ativos. A taxa de implementação inicial cobre a migração assistida de todas as suas planilhas de alunos existentes, parametrização financeira, configuração das turmas e treinamento completo da sua comissão técnica e administrativa.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER (FAITHFUL TO WE ARE JOGA)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/joga-logo-white.png" alt="Joga" class="footer-logo-img">
+          <p>O sistema operacional inteligente para escolas de futebol e clubes que profissionaliza sua gestão e valoriza o desenvolvimento dos atletas.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Soluções</h5>
+          <ul class="footer-links">
+            <li><a href="escolas.html">Escolas & Clubes</a></li>
+            <li><a href="quadras.html">Arenas & Quadras</a></li>
+            <li><a href="torneios.html">Torneios & Copas</a></li>
+            <li><a href="atletas.html">App do Atleta</a></li>
+            <li><a href="casos-de-sucesso.html">Casos de Sucesso</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Institucional</h5>
+          <ul class="footer-links">
+            <li><a href="casos-de-sucesso.html">Casos de Sucesso</a></li>
+            <li><a href="escolas.html">Metodologia</a></li>
+            <li><a href="#pricing">Planos & Preços</a></li>
+            <li><a href="#faq">Central de Ajuda (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contato & Suporte</h5>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/5548988358482" target="_blank">WhatsApp Comercial</a></li>
+            <li><a href="mailto:contato@wearejoga.com">contato@wearejoga.com</a></li>
+            <li>Florianópolis - SC - Brasil</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Joga Tecnologia Esportiva Ltda. Florianópolis - SC - Brasil</div>
+        <div>Segurança Clicksign ICP-Brasil • Pagamentos Integrados • Criptografia TLS 1.3</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       LEAD CAPTURE MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="lead-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div class="section-badge badge-blue">DEMONSTRAÇÃO PERSONALIZADA</div>
+      <h3 class="modal-title">Agendar Demonstração Joga</h3>
+      <p style="color: var(--joga-gray-600); font-size: 0.95rem; margin-bottom: 20px;">
+        Preencha os dados e nosso especialista entrará em contato direto pelo WhatsApp.
+      </p>
+
+      <form id="lead-form">
+        <div class="form-group" style="margin-bottom: 14px;">
+          <label style="display:block; margin-bottom: 6px; font-weight:600;">Seu Nome Completo</label>
+          <input type="text" id="lead-name" class="form-input" style="width:100%; padding:10px; border:1.5px solid var(--border-color); border-radius:6px;" required>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 14px;">
+          <label style="display:block; margin-bottom: 6px; font-weight:600;">WhatsApp com DDD</label>
+          <input type="tel" id="lead-phone" class="form-input" style="width:100%; padding:10px; border:1.5px solid var(--border-color); border-radius:6px;" required>
+        </div>
+
+        <div class="form-group" style="margin-bottom: 20px;">
+          <label style="display:block; margin-bottom: 6px; font-weight:600;">Qual é o foco da sua instituição?</label>
+          <select id="lead-type" style="width:100%; padding:10px; border:1.5px solid var(--border-color); border-radius:6px;">
+            <option value="Escola de Futebol / Esportes">⚽ Escola de Futebol / Clube Esportivo</option>
+            <option value="Arena de Quadras">🏟️ Complexo de Quadras / Arena</option>
+            <option value="Organizador de Torneios">🏆 Organizador de Torneios</option>
+            <option value="Atleta / Peladeiro">🏃 Atleta / Peladeiro</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-lg btn-lime" style="width: 100%;">Falar com um Consultor no WhatsApp 🚀</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

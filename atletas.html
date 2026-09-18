@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicativo para Jogadores de Futebol | Joga App de Performance</title>
+  <meta name="description" content="Conheça o aplicativo de performance para futebol da We Are Joga. Monitore mapa de calor, velocidade máxima, distância e nota FIFA usando seu smartwatch ou celular.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-brand">
+          <img src="assets/joga-logo.png" alt="Joga" class="brand-logo-img">
+        </a>
+
+        <ul class="nav-links">
+          <li class="nav-dropdown">
+            <a href="javascript:void(0)" class="nav-link active">Soluções ▾</a>
+            <div class="dropdown-menu">
+              <a href="escolas.html" class="dropdown-item">
+                <span class="dropdown-item-icon">⚽</span>
+                <div class="dropdown-item-text">
+                  <strong>Escolas & Clubes</strong>
+                  <small>Alunos, chamadas, contratos e e-commerce</small>
+                </div>
+              </a>
+              <a href="quadras.html" class="dropdown-item">
+                <span class="dropdown-item-icon">🏟️</span>
+                <div class="dropdown-item-text">
+                  <strong>Quadras & Arenas</strong>
+                  <small>Grade semanal 24/7 e reservas PIX</small>
+                </div>
+              </a>
+              <a href="torneios.html" class="dropdown-item">
+                <span class="dropdown-item-icon">🏆</span>
+                <div class="dropdown-item-text">
+                  <strong>Torneios & Copas</strong>
+                  <small>Chaveamento mata-mata e súmula digital</small>
+                </div>
+              </a>
+              <a href="atletas.html" class="dropdown-item">
+                <span class="dropdown-item-icon">📱</span>
+                <div class="dropdown-item-text">
+                  <strong>App dos Atletas</strong>
+                  <small>Mapa de calor, notas FIFA e smartwatch</small>
+                </div>
+              </a>
+              <a href="watches.html" class="dropdown-item">
+                <span class="dropdown-item-icon">⌚</span>
+                <div class="dropdown-item-text">
+                  <strong>Relógios Compatíveis</strong>
+                  <small>watchOS, Wear OS e importação via GPX</small>
+                </div>
+              </a>
+              <a href="escolas.html#ecommerce-escolas" class="dropdown-item">
+                <span class="dropdown-item-icon">🛍️</span>
+                <div class="dropdown-item-text">
+                  <strong>Loja Oficial & Uniformes</strong>
+                  <small>Venda de kits oficiais e materiais</small>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li><a href="casos-de-sucesso.html" class="nav-link">Casos de Sucesso</a></li>
+          <li><a href="index.html#pricing" class="nav-link">Planos & Preços</a></li>
+          <li><a href="#faq-atletas" class="nav-link">FAQ</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.ionicframework.jogamaisperformance474307" target="_blank" class="btn btn-sm btn-outline-blue">Baixar App</a>
+          <button class="btn btn-sm btn-lime" data-open-lead-modal>Falar Conosco</button>
+          
+          <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-original">
+    <div class="container">
+      <div class="hero-badge">UM APLICATIVO PARA ATLETAS INQUIETOS</div>
+      <h1 class="hero-title">Leve seu futebol ao próximo nível com seu <span>relógio ou celular</span></h1>
+      <p class="hero-subtitle">
+        Monitore suas partidas de futebol de campo ou society. Descubra sua nota com gráfico FIFA, mapa de calor, velocidade máxima, arrancadas e compare suas estatísticas com atletas de todo o Brasil.
+      </p>
+
+      <div class="hero-audience-box">
+        <a href="https://play.google.com/store/apps/details?id=com.ionicframework.jogamaisperformance474307" target="_blank" class="btn btn-lg btn-blue">Baixar na Play Store (Android)</a>
+        <a href="https://itunes.apple.com/br/app/joga-futebol-gps-joga-mais/id1219358060?mt=8" target="_blank" class="btn btn-lg btn-lime">Baixar na App Store (iOS)</a>
+      </div>
+
+      <div class="hero-price-chip">
+        <span>Compatível com Apple Watch & Samsung Galaxy Watch</span>
+      </div>
+
+      <!-- REAL SYSTEM SCREENSHOT: 3D PHONE HEATMAP -->
+      <div style="max-width: 520px; margin: 36px auto 0; text-align: center;">
+        <img src="https://static.wixstatic.com/media/4e210c_47dac6f2a3d34541ad06a2def93c591a~mv2.png" alt="Aplicativo Joga com Mapa de Calor no Smartphone" style="width: 100%; max-width: 480px; height: auto; filter: drop-shadow(0 20px 40px rgba(18,11,48,0.2));" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ATLETAS FEATURES GRID -->
+  <section class="section section-bg-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-blue">SUAS ESTATÍSTICAS PROFISSIONAIS</span>
+        <h2 class="section-title">O que o aplicativo <span class="text-lime" style="color: var(--joga-lime);">JOGA</span><br>monitora em você</h2>
+        <p class="section-subtitle">Dados de nível profissional que transformam cada pelada ou treino em uma experiência gamificada.</p>
+      </div>
+
+      <div class="pillars-six-grid">
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">🗺️</div>
+          <h4>Mapa de Calor</h4>
+          <p>Veja com exatidão as áreas do campo em que você mais se movimentou e ocupou durante a partida.</p>
+        </div>
+
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">⚡</div>
+          <h4>Velocidade Máxima</h4>
+          <p>Descubra suas marcas de velocidade máxima e média em km/h e veja se você ganha na corrida dos adversários.</p>
+        </div>
+
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">📈</div>
+          <h4>Distância Percorrida</h4>
+          <p>Saiba quantos quilômetros você correu no jogo e acompanhe seu preparo físico semana a semana.</p>
+        </div>
+
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">🎯</div>
+          <h4>Nota com Gráfico FIFA</h4>
+          <p>Receba uma nota geral da sua partida gerada com base na intensidade, velocidade, posicionamento e ritmo.</p>
+        </div>
+
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">🔥</div>
+          <h4>Calorias & Ritmo</h4>
+          <p>Veja quantas calorias você queimou e descubra o quão preparado fisicamente você está.</p>
+        </div>
+
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">🏆</div>
+          <h4>Rankings & Parças</h4>
+          <p>Crie grupos com os amigos da pelada ou do time e descubra quem foi o melhor jogador da rodada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SMARTWATCHES COMPATÍVEIS -->
+  <section class="section section-bg-light">
+    <div class="container">
+      <div class="escolas-feature-box" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+        <div>
+          <span class="section-badge badge-blue">SMARTWATCHES & DISPOSITIVOS</span>
+          <h3 style="font-size: 2rem; margin-bottom: 16px;">Jogue com seu relógio inteligente</h3>
+          <p style="color: var(--joga-gray-600); margin-bottom: 20px;">
+            Possui um relógio inteligente? Use-o para monitorar e se surpreender com seu futebol. Os principais relógios compatíveis são:
+          </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.95rem; color: var(--joga-gray-800); margin-bottom: 24px;">
+            <li>✓ <strong>Apple Watch</strong> Ultra, Series 2 ao 9 e SE (watchOS)</li>
+            <li>✓ <strong>Samsung Galaxy Watch</strong> 4, 5, 6, 7 e Ultra (Wear OS)</li>
+            <li>✓ <strong>Garmin, Polar & Qualquer Relógio</strong> via importação de arquivo GPX</li>
+            <li>✓ Rastreamento autônomo sem precisar levar o celular para dentro das quatro linhas</li>
+          </ul>
+
+          <p style="color: var(--joga-gray-600); font-size: 0.9rem; margin-bottom: 24px;">
+            Monitore mapa de calor, velocidade máxima, distância e frequência cardíaca direto pelo pulso. Não precisa levar o celular para dentro de campo!
+          </p>
+
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="watches.html" class="btn btn-sm btn-outline-blue">Ver Relógios Compatíveis ⌚</a>
+            <a href="app.html" class="btn btn-sm btn-lime">Baixar App Joga</a>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div class="system-screenshot-card" style="text-align: center; padding: 20px;">
+            <img src="https://static.wixstatic.com/media/4e210c_061acafa0c404ca5bb0e64e95ebff505~mv2.png" alt="Smartwatch com App Joga" style="max-height: 180px; width: auto; margin: 0 auto;" loading="lazy">
+            <div style="margin-top: 12px;">
+              <strong style="color: var(--joga-dark); font-size: 0.95rem; display: block;">Smartwatch no Pulso</strong>
+              <small style="color: var(--joga-gray-600);">App autônomo para Apple & Samsung Watch</small>
+            </div>
+          </div>
+
+          <div class="system-screenshot-card" style="text-align: center; padding: 20px;">
+            <img src="https://static.wixstatic.com/media/4e210c_47dac6f2a3d34541ad06a2def93c591a~mv2.png" alt="Mapa de Calor 3D no App Joga" style="max-height: 180px; width: auto; margin: 0 auto;" loading="lazy">
+            <div style="margin-top: 12px;">
+              <strong style="color: var(--joga-dark); font-size: 0.95rem; display: block;">Mapa de Calor 3D</strong>
+              <small style="color: var(--joga-gray-600);">Estatísticas pós-jogo no smartphone</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ ATLETAS (ORIGINAL FAQ) -->
+  <section class="section section-bg-white" id="faq-atletas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-blue">DÚVIDAS FREQUENTES DOS ATLETAS</span>
+        <h2 class="section-title">Perguntas Frequentes sobre o App</h2>
+        <p class="section-subtitle">Tudo sobre o funcionamento, rastreamento por GPS e segurança durante o jogo.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question-btn">
+            <span>1. O aplicativo funciona em todos os ambientes, inclusive quadras?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            O aplicativo funciona muito bem principalmente em ambientes abertos. Para ambientes fechados ainda há algumas limitações que dependem da qualidade do GPS do seu celular e da cobertura do campo.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>2. Como posso saber se o GPS do meu celular é bom?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            Existe um teste fácil e rápido: abra o aplicativo Joga, inicie uma partida e movimente-se. Essa simulação pode ser no próprio campo ou até mesmo andando pela rua para conferir a precisão da rota.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>3. Preciso levar o celular para dentro do campo?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            Não! Se você jogar com Apple Watch ou Samsung Galaxy Watch (Wear OS), o aplicativo Joga funciona de forma 100% autônoma no seu pulso. Você pode deixar o celular no vestiário ou na mochila. Ao final do jogo, os dados sincronizam automaticamente.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>4. Preciso de internet durante o jogo para o aplicativo funcionar?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            Não! Os dados de corrida, velocidade e mapa de calor são rastreados via GPS sem precisar de internet durante a partida. Você só precisa de internet (Wi-Fi ou 4G/5G) após a partida para sincronizar e ver os resultados no app.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>5. Posso usar relógios Garmin, Polar ou Amazfit?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            Sim! O aplicativo Joga aceita a importação de arquivos de atividade no formato GPX exportados de qualquer relógio esportivo ou monitor de corrida. Os dados de GPS são convertidos automaticamente em mapa de calor no gramado e nota FIFA.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>6. Como saber se meu smartwatch é compatível?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            Toda a linha Apple Watch (Series 2 ao 9, SE e Ultra) e a linha Samsung Galaxy Watch com Wear OS (Watch 4, 5, 6, 7 e Ultra) são compatíveis com apps nativos. Além disso, você pode importar partidas via arquivo GPX de qualquer relógio Garmin, Polar, Suunto ou Amazfit. <a href="watches.html" style="color: var(--joga-blue); font-weight: 700;">Consulte a lista completa aqui</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/joga-logo-white.png" alt="Joga" class="footer-logo-img">
+          <p>O aplicativo de performance futebolística feito para quem vive o esporte intensamente.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Páginas</h5>
+          <ul class="footer-links">
+            <li><a href="escolas.html">Escolas & Clubes</a></li>
+            <li><a href="quadras.html">Arenas & Quadras</a></li>
+            <li><a href="torneios.html">Torneios & Copas</a></li>
+            <li><a href="atletas.html">Atletas & App</a></li>
+            <li><a href="casos-de-sucesso.html">Casos de Sucesso</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Download</h5>
+          <ul class="footer-links">
+            <li><a href="https://play.google.com/store/apps/details?id=com.ionicframework.jogamaisperformance474307" target="_blank">Google Play Store</a></li>
+            <li><a href="https://itunes.apple.com/br/app/joga-futebol-gps-joga-mais/id1219358060?mt=8" target="_blank">Apple App Store</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contato</h5>
+          <ul class="footer-links">
+            <li><a href="mailto:contato@wearejoga.com">contato@wearejoga.com</a></li>
+            <li>Florianópolis - SC - Brasil</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Joga. Todos os direitos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LEAD MODAL -->
+  <div class="modal-overlay" id="lead-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div class="section-badge badge-blue">FALE CONOSCO</div>
+      <h3 class="modal-title">Falar com a Equipe Joga</h3>
+      <p style="color: var(--joga-gray-600); font-size: 0.95rem; margin-bottom: 20px;">
+        Tire suas dúvidas sobre o App do Atleta, GPS e relógios compatíveis pelo WhatsApp.
+      </p>
+      <form id="lead-form">
+        <div class="form-group" style="margin-bottom: 14px;">
+          <label style="display:block; margin-bottom: 6px; font-weight:600;">Seu Nome</label>
+          <input type="text" id="lead-name" style="width:100%; padding:10px; border:1px solid var(--border-color); border-radius:6px;" required>
+        </div>
+        <div class="form-group" style="margin-bottom: 14px;">
+          <label style="display:block; margin-bottom: 6px; font-weight:600;">WhatsApp com DDD</label>
+          <input type="tel" id="lead-phone" style="width:100%; padding:10px; border:1px solid var(--border-color); border-radius:6px;" required>
+        </div>
+        <button type="submit" class="btn btn-lg btn-lime" style="width:100%;">Falar no WhatsApp 🚀</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

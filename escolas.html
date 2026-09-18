@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestão para Escolas de Futebol & Clubes | We Are Joga</title>
+  <meta name="description" content="Encante pais, alunos e otimize a gestão da sua escola de futebol. Cobranças automáticas, contratos digitais via WhatsApp, controle metodológico e aplicativo para atletas.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-brand">
+          <img src="assets/joga-logo.png" alt="Joga" class="brand-logo-img">
+        </a>
+
+        <ul class="nav-links">
+          <li class="nav-dropdown">
+            <a href="javascript:void(0)" class="nav-link active">Soluções ▾</a>
+            <div class="dropdown-menu">
+              <a href="escolas.html" class="dropdown-item">
+                <span class="dropdown-item-icon">⚽</span>
+                <div class="dropdown-item-text">
+                  <strong>Escolas & Clubes</strong>
+                  <small>Alunos, chamadas, contratos e e-commerce</small>
+                </div>
+              </a>
+              <a href="quadras.html" class="dropdown-item">
+                <span class="dropdown-item-icon">🏟️</span>
+                <div class="dropdown-item-text">
+                  <strong>Quadras & Arenas</strong>
+                  <small>Grade semanal 24/7 e reservas PIX</small>
+                </div>
+              </a>
+              <a href="torneios.html" class="dropdown-item">
+                <span class="dropdown-item-icon">🏆</span>
+                <div class="dropdown-item-text">
+                  <strong>Torneios & Copas</strong>
+                  <small>Chaveamento mata-mata e súmula digital</small>
+                </div>
+              </a>
+              <a href="atletas.html" class="dropdown-item">
+                <span class="dropdown-item-icon">📱</span>
+                <div class="dropdown-item-text">
+                  <strong>App dos Atletas</strong>
+                  <small>Mapa de calor, notas FIFA e smartwatch</small>
+                </div>
+              </a>
+              <a href="watches.html" class="dropdown-item">
+                <span class="dropdown-item-icon">⌚</span>
+                <div class="dropdown-item-text">
+                  <strong>Relógios Compatíveis</strong>
+                  <small>watchOS, Wear OS e importação via GPX</small>
+                </div>
+              </a>
+              <a href="escolas.html#ecommerce-escolas" class="dropdown-item">
+                <span class="dropdown-item-icon">🛍️</span>
+                <div class="dropdown-item-text">
+                  <strong>Loja Oficial & Uniformes</strong>
+                  <small>Venda de kits oficiais e materiais</small>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li><a href="casos-de-sucesso.html" class="nav-link">Casos de Sucesso</a></li>
+          <li><a href="index.html#pricing" class="nav-link">Planos & Preços</a></li>
+          <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="https://beta.joga.cloud" target="_blank" class="btn btn-sm btn-outline-blue">Entrar no Sistema</a>
+          <button class="btn btn-sm btn-lime" data-open-lead-modal>Solicitar Demonstração</button>
+          
+          <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-original">
+    <div class="container">
+      <div class="hero-badge">SISTEMA INTELIGENTE PARA ESCOLAS DE FUTEBOL</div>
+      <h1 class="hero-title">Encante pais, alunos e otimize a <span>gestão da sua escola de futebol</span></h1>
+      <p class="hero-subtitle">
+        Desfrute de cobranças online via PIX e cartão, envio de lembretes automáticos no WhatsApp, chamada digital em campo, metodologia de treinos e contratos assinados pelo celular com validade jurídica.
+      </p>
+
+      <div class="hero-audience-box">
+        <button class="btn btn-lg btn-lime" data-open-lead-modal>Solicitar Demonstração Gratuita</button>
+        <a href="#recursos-escolas" class="btn btn-lg btn-outline-blue">Ver Todos os Recursos ↓</a>
+      </div>
+
+      <div class="hero-price-chip">
+        <span>Planos para Escolas:</span>
+        <strong>A partir de R$ 250/mês</strong>
+        <small style="color: #666;">(até 100 atletas + suporte completo)</small>
+      </div>
+
+      <!-- REAL SYSTEM SCREENSHOT: ESCOLAS WEB DASHBOARD -->
+      <div class="mockup-browser-frame">
+        <div class="mockup-browser-header">
+          <div class="mockup-browser-dots">
+            <span class="mockup-dot red"></span>
+            <span class="mockup-dot yellow"></span>
+            <span class="mockup-dot green"></span>
+          </div>
+          <div class="mockup-browser-url">https://admin.joga.cloud/escolas/dashboard</div>
+        </div>
+        <img src="https://static.wixstatic.com/media/4e210c_4a8b641afdf14244a541fb6bb1c16c18~mv2.png" alt="Painel de Gestão Joga Escolas e Clubes" class="mockup-screen-img" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: O QUE SUA ESCOLA GANHA -->
+  <section class="section section-bg-white" id="recursos-escolas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-blue">RECURSOS DE GESTÃO ESPORTIVA</span>
+        <h2 class="section-title">Tudo o que sua escola precisa em um só lugar</h2>
+        <p class="section-subtitle">Abandone planilhas confusas e pilhas de papel.</p> 
+        <p class="section-subtitle">Centralize a administração, a secretaria e o campo.</p>
+      </div>
+
+      <div class="escolas-feature-box">
+        <div>
+          <span class="section-badge badge-lime">ADMINISTRAÇÃO & SECRETARIA</span>
+          <h3 style="font-size: 2rem; margin-bottom: 16px;">Secretaria 100% digital e sem papelada física</h3>
+          <p style="color: var(--joga-gray-600); margin-bottom: 20px;">
+            Elimine as fichas impressas e pastas suspensas. O responsável recebe o contrato de matrícula e termos de adesão direto no WhatsApp e assina eletronicamente na tela do celular via Clicksign (ICP-Brasil).
+          </p>
+
+          <div class="checklist-grid">
+            <div class="checklist-item"><span class="check">✓</span> <span>Contratos digitais no WhatsApp</span></div>
+            <div class="checklist-item"><span class="check">✓</span> <span>Cadastro ilimitado de turmas e alunos</span></div>
+            <div class="checklist-item"><span class="check">✓</span> <span>Cofre de atestados médicos na nuvem</span></div>
+            <div class="checklist-item"><span class="check">✓</span> <span>Controle de faltas e alertas anti-evasão</span></div>
+            <div class="checklist-item"><span class="check">✓</span> <span>Cobrança recorrente no cartão sem travar limite</span></div>
+            <div class="checklist-item"><span class="check">✓</span> <span>Emissão de NFS-e em lote</span></div>
+          </div>
+
+          <button class="btn btn-blue" data-open-lead-modal>Quero modernizar minha secretaria</button>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <div class="system-screenshot-card">
+            <img src="https://static.wixstatic.com/media/a53cf5_fd97478eb0274b4984eb3eb4e982378a~mv2.png" alt="App de Chamada e Frequência do Professor" loading="lazy">
+            <div class="system-screenshot-caption">
+              <strong>App do Professor & Chamada em Beira de Campo</strong>
+              <small>Lista de presença digital com foto e status da matrícula em 10 segundos</small>
+            </div>
+          </div>
+
+          <div class="system-screenshot-card">
+            <img src="https://static.wixstatic.com/media/4e210c_62de6fd7b2f248f6978644cd0cc9b2ae~mv2.png" alt="Boletim de Avaliação e Desempenho do Aluno" loading="lazy">
+            <div class="system-screenshot-caption">
+              <strong>Boletim de Desempenho & Evolução Técnica</strong>
+              <small>Gráfico radar de fundamentos e notas compartilhadas direto com os pais</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION: METODOLOGIA & TREINOS -->
+      <div class="escolas-feature-box" style="grid-template-columns: 1.1fr 1fr; margin-top: 50px;">
+        <div style="background: var(--joga-gray-100); border-radius: var(--radius-lg); padding: 32px; border: 1px solid var(--border-color); overflow: hidden;">
+          <span class="section-badge badge-blue">PADRONIZAÇÃO METODOLÓGICA</span>
+          <h4 style="font-size: 1.6rem; margin: 12px 0;">Biblioteca de Exercícios & Metodologia de Treino</h4>
+          <p style="color: var(--joga-gray-600); font-size: 0.95rem; margin-bottom: 20px;">
+            Cadastre seus objetivos de treino, ciclos, atividades e exercícios organizados por faixa etária (Sub-7 a Sub-20). Sua comissão técnica fala a mesma língua em todas as turmas.
+          </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 0.9rem; color: var(--joga-gray-800); margin-bottom: 20px;">
+            <li>✓ Método de avaliação validado com universidades e clubes de renome</li>
+            <li>✓ Registro de scouting com imagens automáticas para compartilhamento</li>
+            <li>✓ Calendário de treinos e jogos integrado com o app dos responsáveis</li>
+          </ul>
+          <img src="https://static.wixstatic.com/media/a53cf5_72615ea152584446b16c47dcee516af6~mv2.jpg" alt="Treinamento no Campo com Metodologia Joga" style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); object-fit: cover; max-height: 220px;" loading="lazy">
+        </div>
+
+        <div>
+          <span class="section-badge badge-lime">RELATÓRIOS & DESEMPENHO</span>
+          <h3 style="font-size: 2rem; margin-bottom: 16px;">Decisões baseadas em dados e retenção de alunos</h3>
+          <p style="color: var(--joga-gray-600); margin-bottom: 24px;">
+            Saiba em tempo real a saúde financeira e operacional da sua escola. Identifique alunos com risco de cancelamento antes que eles tranquem a matrícula e acompanhe o crescimento de matrículas mês a mês.
+          </p>
+          <button class="btn btn-lime" data-open-lead-modal>Agendar Demonstração da Metodologia</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION: E-COMMERCE & LOJA OFICIAL DE UNIFORMES -->
+  <section class="section section-bg-white" id="ecommerce-escolas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-lime">LOJA VIRTUAL & UNIFORMES INTEGRADOS</span>
+        <h2 class="section-title">E-commerce Oficial da sua <span class="text-lime">Escola & Clube</span></h2>
+        <p class="section-subtitle">
+          Venda uniformes de jogo, kits de treino, agasalhos e materiais esportivos diretamente pelo aplicativo dos responsáveis. Acabe com o estoque encalhado e gere até 35% de receita adicional.
+        </p>
+      </div>
+
+      <!-- 4 Pilares do E-commerce Integrado -->
+      <div class="ecommerce-benefits-row">
+        <div class="ecommerce-benefit-item">
+          <div class="ecommerce-benefit-icon">👕</div>
+          <div class="ecommerce-benefit-text">
+            <h5>Kit no Ato da Matrícula</h5>
+            <p>O uniforme obrigatório já pode ser faturado ou parcelado junto da matrícula inicial pelo WhatsApp.</p>
+          </div>
+        </div>
+        <div class="ecommerce-benefit-item">
+          <div class="ecommerce-benefit-icon">⚡</div>
+          <div class="ecommerce-benefit-text">
+            <h5>Split de Pagamento PIX</h5>
+            <p>O repasse financeiro do fornecedor/confecção ocorre de forma automática, sem bitributação na escola.</p>
+          </div>
+        </div>
+        <div class="ecommerce-benefit-item">
+          <div class="ecommerce-benefit-icon">📏</div>
+          <div class="ecommerce-benefit-text">
+            <h5>Grade Infantil a Adulto</h5>
+            <p>Seleção intuitiva de tamanhos do Sub-5 (tamanho 4) até juvenil e adulto (P, M, G, GG) com tabela de medidas.</p>
+          </div>
+        </div>
+        <div class="ecommerce-benefit-item">
+          <div class="ecommerce-benefit-icon">📦</div>
+          <div class="ecommerce-benefit-text">
+            <h5>Zero Estoque Parado</h5>
+            <p>Produção sob demanda ou controle integrado de estoque físico na secretaria com baixa automática.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Showcase de Produtos Oficiais -->
+      <div class="ecommerce-grid">
+        <!-- Produto 1 -->
+        <div class="ecommerce-card">
+          <div class="ecommerce-card-header">
+            <span class="ecommerce-badge-tag tag-hot">Mais Vendido</span>
+            <div class="ecommerce-item-icon">🎽</div>
+          </div>
+          <div class="ecommerce-card-body">
+            <h4 class="ecommerce-item-title">Kit Uniforme Oficial Titular</h4>
+            <p class="ecommerce-item-desc">Conjunto oficial de jogo com camisa personalizada (nome e número), calção em tecido dry respirável e meiões de alta compressão.</p>
+            <div class="ecommerce-sizes-row">
+              <span class="ecommerce-sizes-label">Tamanhos Disponíveis:</span>
+              <div class="ecommerce-sizes-chips">
+                <span class="ecommerce-size-chip">06</span>
+                <span class="ecommerce-size-chip">08</span>
+                <span class="ecommerce-size-chip">10</span>
+                <span class="ecommerce-size-chip">12</span>
+                <span class="ecommerce-size-chip">14</span>
+                <span class="ecommerce-size-chip">P</span>
+                <span class="ecommerce-size-chip">M</span>
+                <span class="ecommerce-size-chip">G</span>
+              </div>
+            </div>
+            <div class="ecommerce-price-block">
+              <span class="ecommerce-price-main">R$ 189,90</span>
+              <span class="ecommerce-price-terms">à vista no PIX ou 3x R$ 66,30</span>
+            </div>
+            <button class="btn btn-sm btn-lime" style="width: 100%;" data-open-lead-modal>Personalizar & Comprar</button>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="ecommerce-card">
+          <div class="ecommerce-card-header">
+            <span class="ecommerce-badge-tag tag-required">Uso Obrigatório</span>
+            <div class="ecommerce-item-icon">👕</div>
+          </div>
+          <div class="ecommerce-card-body">
+            <h4 class="ecommerce-item-title">Kit Treino Diário (Dry-Fit)</h4>
+            <p class="ecommerce-item-desc">Camiseta de treino leve com tecnologia anti-suor e calção anatômico para alta durabilidade nos treinos semanais intensos.</p>
+            <div class="ecommerce-sizes-row">
+              <span class="ecommerce-sizes-label">Tamanhos Disponíveis:</span>
+              <div class="ecommerce-sizes-chips">
+                <span class="ecommerce-size-chip">04</span>
+                <span class="ecommerce-size-chip">06</span>
+                <span class="ecommerce-size-chip">08</span>
+                <span class="ecommerce-size-chip">10</span>
+                <span class="ecommerce-size-chip">12</span>
+                <span class="ecommerce-size-chip">14</span>
+                <span class="ecommerce-size-chip">P</span>
+                <span class="ecommerce-size-chip">M</span>
+              </div>
+            </div>
+            <div class="ecommerce-price-block">
+              <span class="ecommerce-price-main">R$ 149,00</span>
+              <span class="ecommerce-price-terms">à vista no PIX ou 2x R$ 77,50</span>
+            </div>
+            <button class="btn btn-sm btn-lime" style="width: 100%;" data-open-lead-modal>Comprar Kit Treino</button>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="ecommerce-card">
+          <div class="ecommerce-card-header">
+            <span class="ecommerce-badge-tag tag-special">Inverno & Viagem</span>
+            <div class="ecommerce-item-icon">🧥</div>
+          </div>
+          <div class="ecommerce-card-body">
+            <h4 class="ecommerce-item-title">Agasalho Corta-Vento Oficial</h4>
+            <p class="ecommerce-item-desc">Jaqueta com capuz ajustável e calça de compressão térmica para viagens de torneios, dias chuvosos e treinos noturnos.</p>
+            <div class="ecommerce-sizes-row">
+              <span class="ecommerce-sizes-label">Tamanhos Disponíveis:</span>
+              <div class="ecommerce-sizes-chips">
+                <span class="ecommerce-size-chip">08</span>
+                <span class="ecommerce-size-chip">10</span>
+                <span class="ecommerce-size-chip">12</span>
+                <span class="ecommerce-size-chip">14</span>
+                <span class="ecommerce-size-chip">P</span>
+                <span class="ecommerce-size-chip">M</span>
+                <span class="ecommerce-size-chip">G</span>
+                <span class="ecommerce-size-chip">GG</span>
+              </div>
+            </div>
+            <div class="ecommerce-price-block">
+              <span class="ecommerce-price-main">R$ 229,90</span>
+              <span class="ecommerce-price-terms">à vista no PIX ou 4x R$ 60,00</span>
+            </div>
+            <button class="btn btn-sm btn-lime" style="width: 100%;" data-open-lead-modal>Encomendar Agasalho</button>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="ecommerce-card">
+          <div class="ecommerce-card-header">
+            <span class="ecommerce-badge-tag tag-accessory">Acessório Oficial</span>
+            <div class="ecommerce-item-icon">🎒</div>
+          </div>
+          <div class="ecommerce-card-body">
+            <h4 class="ecommerce-item-title">Mochila Esportiva Porta-Chuteira</h4>
+            <p class="ecommerce-item-desc">Mochila reforçada com bolso inferior isolado para chuteiras com travas, compartimento para garrafa d'água e escudo do clube emborrachado.</p>
+            <div class="ecommerce-sizes-row">
+              <span class="ecommerce-sizes-label">Tamanho:</span>
+              <div class="ecommerce-sizes-chips">
+                <span class="ecommerce-size-chip">Único (25 Litros)</span>
+                <span class="ecommerce-size-chip">À Prova d'Água</span>
+              </div>
+            </div>
+            <div class="ecommerce-price-block">
+              <span class="ecommerce-price-main">R$ 119,00</span>
+              <span class="ecommerce-price-terms">à vista no PIX</span>
+            </div>
+            <button class="btn btn-sm btn-lime" style="width: 100%;" data-open-lead-modal>Garantir Mochila</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Banner de Gestão de Pedidos para o Diretor da Escola -->
+      <div class="ecommerce-mgmt-box">
+        <div>
+          <span class="section-badge badge-lime">PAINEL DE EXPEDIÇÃO & GESTÃO</span>
+          <h4>Chega de anotar tamanhos em cadernos e grupos de WhatsApp</h4>
+          <p>
+            No painel administrativo do Joga, sua coordenação exporta a lista completa de pedidos por turma e tamanho em 1 clique para envio à confecção. Os pais recebem notificação quando o uniforme estiver disponível para retirada na secretaria.
+          </p>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <span style="font-size: 0.85rem; background: rgba(255,255,255,0.1); padding: 6px 14px; border-radius: var(--radius-pill);">✓ Notificação de entrega no WhatsApp</span>
+            <span style="font-size: 0.85rem; background: rgba(255,255,255,0.1); padding: 6px 14px; border-radius: var(--radius-pill);">✓ Zero conciliação manual</span>
+          </div>
+        </div>
+        <div style="text-align: center;">
+          <button class="btn btn-lg btn-lime" data-open-lead-modal style="width: 100%;">Quero a Loja Virtual na Minha Escola</button>
+          <small style="display: block; color: var(--joga-gray-400); margin-top: 10px;">Incluso no plano Joga Escolas Pro</small>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRICING TABLE PARA ESCOLAS -->
+  <section class="section section-bg-light">
+    <div class="container text-center">
+      <div class="section-header">
+        <span class="section-badge badge-blue">PLANO COMPLETO JOGA ESCOLAS</span>
+        <h2 class="section-title">Investimento que se paga no primeiro mês</h2>
+        <p class="section-subtitle">Recupere mensalidades atrasadas e aumente suas matrículas com tecnologia profissional.</p>
+      </div>
+
+      <div style="max-width: 580px; margin: 0 auto; background: white; border: 2px solid var(--joga-blue); border-radius: var(--radius-xl); padding: 40px; box-shadow: var(--shadow-lg);">
+        <div class="section-badge badge-blue">JOGA ESCOLAS PRO</div>
+        <h3 style="font-size: 2.5rem; text-transform: uppercase; margin: 10px 0;">R$ 250<span style="font-size: 1.1rem; color: #666; font-weight: normal;">/mês</span></h3>
+        <p style="color: var(--joga-gray-600); font-size: 0.95rem; margin-bottom: 24px;">Até 100 atletas ativos (+ taxa de implementação)</p>
+
+        <div style="text-align: left; margin-bottom: 30px; display: flex; flex-direction: column; gap: 12px; font-size: 0.95rem;">
+          <div>✓ Painel de indicadores e gestão administrativa completa</div>
+          <div>✓ Cadastro ilimitado de turmas, colaboradores e atletas</div>
+          <div>✓ Cobrança online via PIX, boleto e cartão de crédito</div>
+          <div>✓ Contratos digitais no WhatsApp com assinatura Clicksign</div>
+          <div>✓ Régua de cobrança automática preventiva e de inadimplentes</div>
+          <div>✓ Lista de chamada via aplicativo e plataforma</div>
+          <div>✓ Boletim mensal do atleta e avaliação de desempenho</div>
+          <div>✓ Metodologia de treinos e relatórios de scouting</div>
+          <div>✓ Suporte especializado para aumentar suas mensalidades</div>
+        </div>
+
+        <button class="btn btn-lg btn-lime" style="width: 100%;" data-open-lead-modal>Contratar Joga Escolas</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/joga-logo-white.png" alt="Joga" class="footer-logo-img">
+          <p>O sistema de gestão inteligente para escolas e clubes de futebol que profissionaliza sua operação e fideliza atletas e famílias.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Páginas</h5>
+          <ul class="footer-links">
+            <li><a href="escolas.html">Escolas & Clubes</a></li>
+            <li><a href="quadras.html">Arenas & Quadras</a></li>
+            <li><a href="torneios.html">Torneios & Copas</a></li>
+            <li><a href="atletas.html">Atletas & App</a></li>
+            <li><a href="casos-de-sucesso.html">Casos de Sucesso</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contato</h5>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/5548988358482" target="_blank">WhatsApp Comercial</a></li>
+            <li><a href="mailto:contato@wearejoga.com">contato@wearejoga.com</a></li>
+            <li>Florianópolis - SC - Brasil</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Segurança</h5>
+          <ul class="footer-links">
+            <li>Clicksign ICP-Brasil</li>
+            <li>Asaas & Pagarme</li>
+            <li>Criptografia TLS 1.3</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Joga. Todos os direitos reservados.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LEAD MODAL -->
+  <div class="modal-overlay" id="lead-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div class="section-badge badge-blue">DEMONSTRAÇÃO ESCOLAS</div>
+      <h3 class="modal-title">Demonstração Joga Escolas</h3>
+      <p style="color: var(--joga-gray-600); font-size: 0.95rem; margin-bottom: 20px;">
+        Preencha os dados e nosso especialista entrará em contato direto pelo WhatsApp.
+      </p>
+      <form id="lead-form">
+        <div class="form-group" style="margin-bottom: 14px;">
+          <label class="form-label" style="display:block; margin-bottom: 6px; font-weight:600;">Seu Nome</label>
+          <input type="text" id="lead-name" class="form-input" style="width:100%; padding:10px; border:1px solid var(--border-color); border-radius:6px;" required>
+        </div>
+        <div class="form-group" style="margin-bottom: 14px;">
+          <label class="form-label" style="display:block; margin-bottom: 6px; font-weight:600;">WhatsApp com DDD</label>
+          <input type="tel" id="lead-phone" class="form-input" style="width:100%; padding:10px; border:1px solid var(--border-color); border-radius:6px;" required>
+        </div>
+        <div class="form-group" style="margin-bottom: 20px;">
+          <label class="form-label" style="display:block; margin-bottom: 6px; font-weight:600;">Nome da Escola / Clube</label>
+          <input type="text" id="lead-school" class="form-input" style="width:100%; padding:10px; border:1px solid var(--border-color); border-radius:6px;" placeholder="Ex: Escolinha Craque do Futuro" required>
+        </div>
+        <button type="submit" class="btn btn-lg btn-lime" style="width:100%;">Falar com Consultor no WhatsApp 🚀</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

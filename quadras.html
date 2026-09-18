@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Gestão para Locação de Quadras & Arenas Esportivas | Joga</title>
+  <meta name="description" content="Plataforma completa para complexos esportivos e arenas: grade de horários 24/7, agendamento online, recebimento antecipado via PIX, gestão de mensalistas e bar integrado.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-brand">
+          <img src="assets/joga-logo.png" alt="Joga" class="brand-logo-img">
+        </a>
+
+        <ul class="nav-links">
+          <li class="nav-dropdown">
+            <a href="javascript:void(0)" class="nav-link active">Soluções ▾</a>
+            <div class="dropdown-menu">
+              <a href="escolas.html" class="dropdown-item">
+                <span class="dropdown-item-icon">⚽</span>
+                <div class="dropdown-item-text">
+                  <strong>Escolas & Clubes</strong>
+                  <small>Alunos, chamadas, contratos e e-commerce</small>
+                </div>
+              </a>
+              <a href="quadras.html" class="dropdown-item">
+                <span class="dropdown-item-icon">🏟️</span>
+                <div class="dropdown-item-text">
+                  <strong>Quadras & Arenas</strong>
+                  <small>Grade semanal 24/7 e reservas PIX</small>
+                </div>
+              </a>
+              <a href="torneios.html" class="dropdown-item">
+                <span class="dropdown-item-icon">🏆</span>
+                <div class="dropdown-item-text">
+                  <strong>Torneios & Copas</strong>
+                  <small>Chaveamento mata-mata e súmula digital</small>
+                </div>
+              </a>
+              <a href="atletas.html" class="dropdown-item">
+                <span class="dropdown-item-icon">📱</span>
+                <div class="dropdown-item-text">
+                  <strong>App dos Atletas</strong>
+                  <small>Mapa de calor, notas FIFA e smartwatch</small>
+                </div>
+              </a>
+              <a href="watches.html" class="dropdown-item">
+                <span class="dropdown-item-icon">⌚</span>
+                <div class="dropdown-item-text">
+                  <strong>Relógios Compatíveis</strong>
+                  <small>watchOS, Wear OS e importação via GPX</small>
+                </div>
+              </a>
+              <a href="escolas.html#ecommerce-escolas" class="dropdown-item">
+                <span class="dropdown-item-icon">🛍️</span>
+                <div class="dropdown-item-text">
+                  <strong>Loja Oficial & Uniformes</strong>
+                  <small>Venda de kits oficiais e materiais</small>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li><a href="casos-de-sucesso.html" class="nav-link">Casos de Sucesso</a></li>
+          <li><a href="index.html#pricing" class="nav-link">Planos & Preços</a></li>
+          <li><a href="#faq-quadras" class="nav-link">FAQ</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="https://beta.joga.cloud" target="_blank" class="btn btn-sm btn-outline-blue">Entrar no Sistema</a>
+          <button class="btn btn-sm btn-lime" data-open-lead-modal>Solicitar Demonstração</button>
+          
+          <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-original">
+    <div class="container">
+      <div class="hero-badge">SISTEMA INTELIGENTE PARA ARENAS & LOCAÇÃO DE QUADRAS</div>
+      <h1 class="hero-title">Maximize a ocupação das suas quadras e <span class="text-lime">elimine o no-show</span></h1>
+      <p class="hero-subtitle">
+        Grade de horários online 24/7, agendamento direto pelo link do WhatsApp, cobrança antecipada com PIX dinâmico (baixa em 0.8s) e gestão automática de mensalistas e peladas fixas.
+      </p>
+
+      <div class="hero-audience-box">
+        <button class="btn btn-lg btn-lime" data-open-lead-modal>Agendar Demonstração Gratuita</button>
+        <a href="#grade-interativa" class="btn btn-lg btn-outline-blue">Ver Grade Interativa ↓</a>
+      </div>
+
+      <div class="hero-price-chip">
+        <span>A partir de R$ 199/mês • Sem taxa por agendamento • Suporte dedicado no WhatsApp</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GRADE INTERATIVA SHOWCASE -->
+  <section class="section section-bg-white" id="grade-interativa">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-blue">EXPERIÊNCIA DO CLIENTE & GESTOR</span>
+        <h2 class="section-title">Grade Semanal Inteligente que <span class="text-lime">Vende por Você</span></h2>
+        <p class="section-subtitle">Seu cliente escolhe o dia e horário pelo link da sua arena, paga no PIX e a grade bloqueia o horário automaticamente sem você precisar responder no WhatsApp.</p>
+      </div>
+
+      <div class="court-schedule-board">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 24px;">
+          <div>
+            <h3 style="font-size: 1.4rem; color: var(--joga-navy); margin-bottom: 4px;">Arena Central Sports • Grade Semanal</h3>
+            <p style="color: var(--joga-gray-600); font-size: 0.9rem;">Horários atualizados em tempo real com QR Code dinâmico</p>
+          </div>
+          <div class="court-filter-tabs" style="margin-bottom: 0;">
+            <button class="court-filter-btn active">⚽ Quadra 1 - Society</button>
+            <button class="court-filter-btn">🎾 Quadra 2 - Beach Tennis</button>
+            <button class="court-filter-btn">🏸 Quadra 3 - Padel</button>
+          </div>
+        </div>
+
+        <div class="court-slots-grid">
+          <!-- Slot 1 -->
+          <div class="court-slot mensalista">
+            <div class="court-slot-time">18:00 - 19:00</div>
+            <div style="font-size: 0.85rem; color: #1e40af; font-weight: 600; margin: 6px 0;">Pelada do Terceirão (Fixo)</div>
+            <span class="court-slot-badge mensalista">Mensalista Confirmado</span>
+          </div>
+
+          <!-- Slot 2 -->
+          <div class="court-slot reserved">
+            <div class="court-slot-time">19:00 - 20:00</div>
+            <div style="font-size: 0.85rem; color: #854d0e; font-weight: 600; margin: 6px 0;">Reserva Avulsa • Lucas M.</div>
+            <span class="court-slot-badge reserved">Pago via PIX</span>
+          </div>
+
+          <!-- Slot 3 -->
+          <div class="court-slot available">
+            <div class="court-slot-time">20:00 - 21:00</div>
+            <div style="font-size: 0.85rem; color: #15803d; font-weight: 700; margin: 6px 0;">R$ 180 / hora</div>
+            <button class="btn btn-sm btn-lime" style="width: 100%; margin-top: 8px;" data-open-lead-modal>Reservar Horário</button>
+            <span class="court-slot-badge available" style="text-align: center; margin-top: 6px;">Disponível</span>
+          </div>
+
+          <!-- Slot 4 -->
+          <div class="court-slot available">
+            <div class="court-slot-time">21:00 - 22:00</div>
+            <div style="font-size: 0.85rem; color: #15803d; font-weight: 700; margin: 6px 0;">R$ 180 / hora</div>
+            <button class="btn btn-sm btn-lime" style="width: 100%; margin-top: 8px;" data-open-lead-modal>Reservar Horário</button>
+            <span class="court-slot-badge available" style="text-align: center; margin-top: 6px;">Disponível</span>
+          </div>
+
+          <!-- Slot 5 -->
+          <div class="court-slot mensalista">
+            <div class="court-slot-time">22:00 - 23:00</div>
+            <div style="font-size: 0.85rem; color: #1e40af; font-weight: 600; margin: 6px 0;">Grupo Master 40+</div>
+            <span class="court-slot-badge mensalista">Mensalista Confirmado</span>
+          </div>
+        </div>
+
+        <div style="margin-top: 24px; padding: 16px; background: #f8fafc; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 0.85rem; color: var(--joga-gray-600);">
+          <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+            <span>🟢 <strong>Verde:</strong> Horário livre para locação</span>
+            <span>🔵 <strong>Azul:</strong> Mensalista com contrato recorrente</span>
+            <span>🟡 <strong>Amarelo:</strong> Reserva avulsa paga com PIX</span>
+          </div>
+          <div>
+            <strong style="color: var(--joga-navy);">Tempo médio de reserva: 32 segundos</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 PILARES DE GESTÃO PARA ARENAS -->
+  <section class="section section-bg-gray">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-blue">RECURSOS NATIVOS</span>
+        <h2 class="section-title">Tudo o que sua Arena precisa em <span class="text-lime">um só sistema</span></h2>
+        <p class="section-subtitle">Projetado especificamente para donos de quadras de futebol society, futevôlei, beach tennis, padel e quadras poliesportivas.</p>
+      </div>
+
+      <div class="pillars-six-grid">
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">📅</div>
+          <h4>Grade 24/7 & Link na Bio</h4>
+          <p>Disponibilize o link da sua arena no Instagram e WhatsApp. O cliente confere os horários vagos a qualquer momento do dia ou da noite e faz a reserva sozinho.</p>
+        </div>
+
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">⚡</div>
+          <h4>PIX Instantâneo com Baixa em 0.8s</h4>
+          <p>Cobrança com QR Code dinâmico do valor exato. Assim que o cliente paga pelo banco, a grade é liberada e o comprovante é gerado automaticamente.</p>
+        </div>
+
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">🔁</div>
+          <h4>Mensalistas & Peladas Fixas</h4>
+          <p>Bloqueie horários fixos para mensalistas com renovação mensal automática. O sistema gera a fatura mensal e dispara no WhatsApp do responsável.</p>
+        </div>
+
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">🛡️</div>
+          <h4>Zero No-Show e Cancelamento Justo</h4>
+          <p>Acabe com o prejuízo de grupos que marcam e não aparecem. Exija sinal de 50% ou 100% no ato do agendamento com regras claras de cancelamento.</p>
+        </div>
+
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">🍻</div>
+          <h4>Comanda de Bar & Copa Integrada</h4>
+          <p>Lance bebidas, espetinhos, bolas e aluguel de materiais na comanda de cada horário. Feche o caixa diário sem furos nem notas em papel perdidas.</p>
+        </div>
+
+        <div class="pillar-six-card">
+          <div class="pillar-six-icon">📈</div>
+          <h4>Relatórios de Ocupação & Faturamento</h4>
+          <p>Descubra quais dias e horários têm maior demanda, acompanhe o faturamento acumulado e crie promoções direcionadas para horários ociosos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE: SISTEMA & RELATÓRIOS JOGA ARENAS -->
+  <section class="section section-bg-light" style="padding-top: 10px; padding-bottom: 40px;">
+    <div class="container">
+      <div class="mockup-browser-frame">
+        <div class="mockup-browser-header">
+          <div class="mockup-browser-dots">
+            <span class="mockup-dot red"></span>
+            <span class="mockup-dot yellow"></span>
+            <span class="mockup-dot green"></span>
+          </div>
+          <div class="mockup-browser-url">https://admin.joga.cloud/arenas/ocupacao-financeiro</div>
+        </div>
+        <img src="https://static.wixstatic.com/media/4e210c_fc96f71c550f4e0b9572cd8950d7c68c~mv2.png" alt="Painel Financeiro e Relatórios de Ocupação da Arena Joga" class="mockup-screen-img" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARATIVO: MANUAL VS JOGA ARENAS -->
+  <section class="section section-bg-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-blue">COMPARAÇÃO DIRETA</span>
+        <h2 class="section-title">Chega de perder horários por <span class="text-lime">falta de resposta rápida</span></h2>
+        <p class="section-subtitle">Veja como o Joga transforma a rotina operacional do seu complexo esportivo.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+        <!-- Sem Joga -->
+        <div style="background: #fff5f5; border: 1px solid #fed7d7; border-radius: var(--radius-xl); padding: 36px 30px;">
+          <h4 style="color: #c53030; font-size: 1.3rem; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+            <span>❌</span> Locação Manual (WhatsApp & Caderno)
+          </h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 0.95rem; color: #4a5568;">
+            <li>❌ <strong>Cliente espera horas:</strong> Você demora para responder no WhatsApp e ele aluga na arena concorrente.</li>
+            <li>❌ <strong>Horário duplicado:</strong> Dois funcionários marcam clientes diferentes no mesmo horário de pico.</li>
+            <li>❌ <strong>Calotes & No-show:</strong> O grupo marca, não aparece de última hora e a quadra fica vazia sem receita.</li>
+            <li>❌ <strong>Cobrança chata de mensalistas:</strong> Todo início de mês você precisa ficar cobrando o líder da pelada.</li>
+            <li>❌ <strong>Bar descontrolado:</strong> Bebidas e cervejas vendidas sem saber exatamente quem pagou.</li>
+          </ul>
+        </div>
+
+        <!-- Com Joga -->
+        <div style="background: #f0fdf4; border: 2px solid var(--joga-lime); border-radius: var(--radius-xl); padding: 36px 30px; box-shadow: 0 10px 30px rgba(108,194,15,0.1);">
+          <h4 style="color: #15803d; font-size: 1.3rem; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+            <span>✅</span> Com o Joga para Arenas & Quadras
+          </h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 0.95rem; color: #1e293b;">
+            <li>✅ <strong>Reserva 24/7 automática:</strong> Seu cliente escolhe e reserva até de madrugada pelo celular.</li>
+            <li>✅ <strong>Grade sincronizada:</strong> Impossível haver reservas duplicadas, tudo atualiza em tempo real.</li>
+            <li>✅ <strong>Pagamento garantido:</strong> Apenas horários pagos no PIX são confirmados na grade.</li>
+            <li>✅ <strong>Mensalistas pontuais:</strong> Lembretes automáticos no WhatsApp com chave PIX copia e cola.</li>
+            <li>✅ <strong>Caixa 100% blindado:</strong> Comandas digitais para copa e bar vinculadas aos responsáveis.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANOS QUADRAS -->
+  <section class="section section-bg-gray" id="planos-quadras">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-blue">TRANSPARÊNCIA TOTAL</span>
+        <h2 class="section-title">Plano Completo para Arenas</h2>
+        <p class="section-subtitle">Sem cobrança de comissão abusiva por cada jogo. Pague uma mensalidade fixa e fique com 100% do valor das suas quadras.</p>
+      </div>
+
+      <div style="max-width: 540px; margin: 0 auto; background: white; border: 2px solid var(--joga-blue); border-radius: var(--radius-xl); padding: 40px; box-shadow: 0 15px 35px rgba(18,11,48,0.08); text-align: center;">
+        <span class="badge-blue" style="padding: 6px 16px; font-weight: 700; border-radius: 20px; font-size: 0.85rem; text-transform: uppercase;">Módulo Arenas & Quadras</span>
+        <div style="margin: 24px 0 16px;">
+          <span style="font-family: var(--font-heading); font-size: 3.5rem; font-weight: 800; color: var(--joga-dark);">R$ 199</span>
+          <span style="color: #666; font-size: 1.1rem;">/mês</span>
+        </div>
+        <p style="color: var(--joga-gray-600); font-size: 0.95rem; margin-bottom: 24px;">Ideal para complexos de Society, Futevôlei, Beach Tennis e Padel.</p>
+
+        <ul style="list-style: none; text-align: left; display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; font-size: 0.95rem; color: var(--joga-gray-800);">
+          <li>✓ Grade interativa 24/7 para múltiplas quadras</li>
+          <li>✓ Link exclusivo de agendamento online para Instagram/WhatsApp</li>
+          <li>✓ Recebimento antecipado via PIX com baixa em 0.8s</li>
+          <li>✓ Gestão de mensalistas e peladas recorrentes</li>
+          <li>✓ Comanda digital de bar, bebidas e locação de bolas</li>
+          <li>✓ Relatórios detalhados de faturamento e taxa de ocupação</li>
+          <li>✓ Suporte prioritário via WhatsApp</li>
+        </ul>
+
+        <button class="btn btn-lg btn-lime" style="width: 100%;" data-open-lead-modal>Quero Contratar para Minha Arena</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ QUADRAS -->
+  <section class="section section-bg-white" id="faq-quadras">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge badge-blue">TIRE SUAS DÚVIDAS</span>
+        <h2 class="section-title">Perguntas Frequentes sobre Quadras</h2>
+      </div>
+
+      <div class="faq-accordion-wrap">
+        <div class="faq-item active">
+          <button class="faq-question-btn">
+            <span>1. O sistema cobra taxa ou porcentagem sobre cada reserva de quadra?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box" style="display: block;">
+            Não! Ao contrário de marketplaces que cobram de 10% a 20% do valor da sua quadra em cada locação, o Joga cobra apenas uma mensalidade fixa de software. Todo o valor pago pelos seus clientes no PIX cai direto na sua conta.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>2. Como funciona para os grupos mensalistas que jogam toda semana?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            Você pode travar os horários dos mensalistas na grade fixa. O sistema gera automaticamente a fatura mensal e dispara mensagens de lembrete no WhatsApp do responsável pela pelada, facilitando a cobrança sem desgastes.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>3. Como o cliente acessa a grade para reservar pelo celular?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            Sua arena recebe um link exclusivo (ex: joga.cloud/sua-arena) que você pode colocar na bio do Instagram e configurar em uma resposta rápida do WhatsApp. O cliente clica, escolhe a quadra, o dia e o horário livre, escaneia o PIX e a confirmação é imediata.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>4. E se o cliente quiser pagar em dinheiro ou no cartão na recepção?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            Sem problemas! Seu operador na recepção da arena pode bloquear o horário manualmente na grade e registrar o pagamento em dinheiro, cartão ou cortesia com apenas 2 cliques.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>5. Minha arena também tem escolinha de futebol. Posso usar os dois módulos?</span>
+            <span class="faq-chevron">+</span>
+          </button>
+          <div class="faq-answer-box">
+            Com certeza! O Joga foi desenvolvido como um ecossistema modular integrado. Você pode gerenciar sua escolinha de futebol (alunos, turmas, contratos e chamadas) e suas quadras de aluguel no mesmo painel administrativo unificado.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section section-bg-dark" style="text-align: center;">
+    <div class="container">
+      <span class="section-badge badge-lime">COMECE HOJE MESMO</span>
+      <h2 class="section-title" style="color: white; margin-top: 12px;">Modernize a gestão da sua arena esportiva</h2>
+      <p class="section-subtitle" style="max-width: 650px; margin: 0 auto 32px; color: #ccc;">
+        Fale com um de nossos especialistas e veja uma demonstração ao vivo da grade de horários configurada para as quadras da sua arena.
+      </p>
+      <button class="btn btn-lg btn-lime" data-open-lead-modal>Solicitar Demonstração Gratuita</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/joga-logo-white.png" alt="Joga" class="footer-logo-img">
+          <p>O sistema operacional inteligente para escolas de futebol, arenas de quadras e clubes que profissionaliza sua gestão e valoriza o esporte.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Soluções</h5>
+          <ul class="footer-links">
+            <li><a href="escolas.html">Escolas & Clubes</a></li>
+            <li><a href="quadras.html">Arenas & Quadras</a></li>
+            <li><a href="torneios.html">Torneios & Copas</a></li>
+            <li><a href="atletas.html">App do Atleta</a></li>
+            <li><a href="casos-de-sucesso.html">Casos de Sucesso</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Institucional</h5>
+          <ul class="footer-links">
+            <li><a href="casos-de-sucesso.html">Casos de Sucesso</a></li>
+            <li><a href="index.html#pricing">Planos & Preços</a></li>
+            <li><a href="index.html#faq">Central de Ajuda (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contato & Suporte</h5>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/5548988358482" target="_blank">WhatsApp Comercial</a></li>
+            <li><a href="mailto:contato@wearejoga.com">contato@wearejoga.com</a></li>
+            <li>Florianópolis - SC - Brasil</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Joga Tecnologia Esportiva Ltda. Florianópolis - SC - Brasil</div>
+        <div>Segurança Clicksign ICP-Brasil • Pagamentos Integrados • Criptografia TLS 1.3</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LEAD CAPTURE MODAL -->
+  <div class="modal-backdrop" id="lead-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div class="modal-header">
+        <span class="section-badge badge-blue">DEMONSTRAÇÃO PERSONALIZADA</span>
+        <h3>Agende uma apresentação do Joga para sua Arena</h3>
+        <p>Preencha os dados abaixo para receber uma demonstração prática da grade de quadras e automação de reservas.</p>
+      </div>
+
+      <form id="lead-form" class="lead-form">
+        <div class="form-group">
+          <label for="lead-name">Seu Nome Completo *</label>
+          <input type="text" id="lead-name" name="name" required placeholder="Ex: Roberto Carlos">
+        </div>
+
+        <div class="form-group">
+          <label for="lead-phone">WhatsApp com DDD *</label>
+          <input type="tel" id="lead-phone" name="phone" required placeholder="(11) 99999-9999">
+        </div>
+
+        <div class="form-group">
+          <label for="lead-email">E-mail Corporativo *</label>
+          <input type="email" id="lead-email" name="email" required placeholder="roberto@arenaesportiva.com.br">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="lead-role">Seu Perfil *</label>
+            <select id="lead-role" name="role" required>
+              <option value="Dono de Arena" selected>🏟️ Dono de Arena / Complexo de Quadras</option>
+              <option value="Dono de Escola">⚽ Dono / Gestor de Escola de Futebol</option>
+              <option value="Organizador de Torneios">🏆 Organizador de Torneios</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="lead-courts">Quantas Quadras? *</label>
+            <select id="lead-courts" name="courts" required>
+              <option value="1 a 2 quadras">1 a 2 quadras</option>
+              <option value="3 a 5 quadras" selected>3 a 5 quadras</option>
+              <option value="Mais de 5 quadras">Mais de 5 quadras</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-lime btn-submit" id="btn-submit-lead">
+          <span>Solicitar Apresentação no WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
