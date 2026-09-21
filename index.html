@@ -152,7 +152,7 @@
           </div>
           <div class="mockup-browser-url">https://admin.joga.cloud/dashboard</div>
         </div>
-        <img src="https://static.wixstatic.com/media/4e210c_4a8b641afdf14244a541fb6bb1c16c18~mv2.png" alt="Painel de Gestão Joga para Escolas e Clubes" class="mockup-screen-img" loading="lazy">
+        <img src="assets/dashboard-gestao.png" alt="Painel de Gestão Joga para Escolas e Clubes" class="mockup-screen-img" loading="lazy">
       </div>
     </div>
   </section>
@@ -164,7 +164,7 @@
     <div class="container">
       <div class="brands-strip-title">Grandes clubes e escolas confiam na Joga como diferencial</div>
       <div style="max-width: 900px; margin: 0 auto 20px; text-align: center;">
-        <img src="https://static.wixstatic.com/media/4e210c_cfc123186dc24a678776dfe04a51dc88~mv2.png" alt="Clubes e parceiros homologados Joga" style="width: 100%; max-width: 820px; height: auto; display: block; margin: 0 auto 16px;" loading="lazy">
+        <img src="assets/clubes-parceiros.png" alt="Clubes e parceiros homologados Joga" style="width: 100%; max-width: 820px; height: auto; display: block; margin: 0 auto 16px;" loading="lazy">
       </div>
       <div class="brands-logos-grid">
         <span class="brand-pill">Boca Juniors (Escola de Futebol)</span>
@@ -333,7 +333,7 @@
         </div>
 
         <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius-lg); padding: 32px; text-align: center;">
-          <img src="https://static.wixstatic.com/media/4e210c_47dac6f2a3d34541ad06a2def93c591a~mv2.png" alt="App Joga no Celular" style="width: 100%; max-width: 240px; height: auto; margin-bottom: 16px; filter: drop-shadow(0 12px 24px rgba(0,0,0,0.3));" loading="lazy">
+          <img src="assets/app-celular-mapa-calor.png" alt="App Joga no Celular" style="width: 100%; max-width: 240px; height: auto; margin-bottom: 16px; filter: drop-shadow(0 12px 24px rgba(0,0,0,0.3));" loading="lazy">
           <div style="font-family: var(--font-heading); font-size: 3.2rem; color: var(--joga-lime); font-weight: 800; line-height: 1;">+10.000</div>
           <strong style="color: white; font-size: 1.1rem; display: block; margin: 8px 0;">Atletas ativos no aplicativo</strong>
           <p style="color: var(--joga-gray-400); font-size: 0.9rem; margin-bottom: 20px;">
@@ -346,39 +346,189 @@
   </section>
 
   <!-- ==========================================================================
-       EXPANDED ECOSYSTEM (ARENAS, TORNEIOS & LOJA DO BLUEPRINT)
+       EXPANDED ECOSYSTEM (INTERACTIVE PLATFORM TABS WITH REAL PRINTS & MOCKUPS)
        ========================================================================== -->
   <section class="section section-bg-white" id="ecossistema-expandido">
     <div class="container">
       <div class="section-header">
-        <span class="section-badge badge-blue">EXPANSÃO DO SEU NEGÓCIO ESPORTIVO</span>
-        <h2 class="section-title">Sua escola tem quadras, copas ou loja de uniformes?</h2>
-        <p class="section-subtitle">O Joga conecta tudo no mesmo sistema: aluguel de quadras, organização de campeonatos e e-commerce de materiais esportivos.</p>
+        <span class="section-badge badge-blue">ECOSSISTEMA ESPORTIVO COMPLETO</span>
+        <h2 class="section-title">Um Único Ecossistema.<br>Todas as Demandas do Seu Negócio Esportivo.</h2>
+        <p class="section-subtitle">Do agendamento de quadras à assinatura digital de contratos e gestão de campeonatos. Escolha seu segmento e veja a plataforma real em ação:</p>
       </div>
 
-      <div class="pillars-six-grid">
-        <!-- Arenas -->
-        <div class="pillar-six-card" id="ecossistema-arenas">
-          <div class="pillar-six-icon">🏟️</div>
-          <h4>Arenas & Locação de Quadras</h4>
-          <p>Grade semanal interativa 24/7 com pagamento antecipado via PIX dinâmico, bloqueio automático e gestão de peladas fixas/mensalistas.</p>
-          <a href="quadras.html" style="color: var(--joga-blue); font-weight: 700; font-size: 0.85rem; display: block; margin-top: 12px;">Ver tela exclusiva de Arenas →</a>
-        </div>
+      <!-- Navigation Tabs -->
+      <div class="platform-tabs-nav" role="tablist">
+        <button class="platform-tab-btn active" onclick="switchPlatformTab('arenas', this)">
+          🏟️ Arenas &amp; Quadras
+        </button>
+        <button class="platform-tab-btn" onclick="switchPlatformTab('escolas', this)">
+          ⚽ Escolas &amp; Clubes
+        </button>
+        <button class="platform-tab-btn" onclick="switchPlatformTab('torneios', this)">
+          🏆 Torneios &amp; Copas
+        </button>
+        <button class="platform-tab-btn" onclick="switchPlatformTab('loja', this)">
+          🛍️ Loja &amp; Uniformes
+        </button>
+      </div>
 
-        <!-- Torneios -->
-        <div class="pillar-six-card" id="ecossistema-torneios">
-          <div class="pillar-six-icon">🏆</div>
-          <h4>Torneios, Copas & Ligas</h4>
-          <p>Chaveamento automático mata-mata (Série Ouro e Prata), classificação com critérios de desempate e súmula digital minuto a minuto ao vivo.</p>
-          <a href="torneios.html" style="color: var(--joga-blue); font-weight: 700; font-size: 0.85rem; display: block; margin-top: 12px;">Ver tela exclusiva de Torneios →</a>
+      <!-- TAB 1: ARENAS & QUADRAS -->
+      <div id="ptab-arenas" class="platform-tab-pane active">
+        <div class="platform-showcase-media">
+          <img src="assets/mockup-arenas.jpg" alt="Mockup Arenas e Quadras Joga" loading="lazy">
+          <span class="platform-media-badge">Grade Semanal + App do Atleta</span>
         </div>
+        <div class="platform-showcase-info">
+          <span class="platform-tab-label">🏟️ Arenas &amp; Quadras</span>
+          <h3>Sua arena cheia todos os dias, sem furos e com PIX adiantado.</h3>
+          <p class="platform-lead-desc">Elimine as confirmações manuais no WhatsApp. Seus clientes reservam a quadra pelo celular em 30 segundos com pagamento antecipado no PIX, enquanto você tem a grade semanal completa e analytics de horários de pico.</p>
+          <ul class="platform-feature-bullets">
+            <li>
+              <span class="check-icon">✓</span>
+              <div><strong>Grade Semanal Interativa:</strong> Visualização em tempo real de Society, Beach Tennis, Padel e Campos Oficiais.</div>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <div><strong>PIX Instantâneo com Baixa Automática:</strong> O horário só confirma com pagamento realizado, eliminando no-shows.</div>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <div><strong>Gestão de Mensalistas:</strong> Renove automaticamente as peladas semanais com emissão de cobranças recorrentes.</div>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <div><strong>Lista de Espera Inteligente:</strong> Desistências acionam automaticamente a fila de clientes interessados.</div>
+            </li>
+          </ul>
+          <div class="platform-cta-row">
+            <button class="btn btn-lime" data-open-lead-modal>Quero Lotar Minha Arena →</button>
+            <a href="quadras.html" class="btn btn-outline-blue">Ver tela exclusiva de Arenas</a>
+          </div>
+        </div>
+      </div>
 
-        <!-- Loja -->
-        <div class="pillar-six-card" id="ecossistema-loja">
-          <div class="pillar-six-icon">🛍️</div>
-          <h4>Loja Oficial & E-commerce</h4>
-          <p>Vitrine pública personalizada para vender kits de uniforme com grade de tamanhos (P/M/G/Infantil), controle de estoque e checkout integrado.</p>
-          <a href="#pricing" style="color: var(--joga-blue); font-weight: 700; font-size: 0.85rem; display: block; margin-top: 12px;">Vender uniformes online →</a>
+      <!-- TAB 2: ESCOLAS & CLUBES -->
+      <div id="ptab-escolas" class="platform-tab-pane">
+        <div class="platform-showcase-media">
+          <img src="assets/mockup-escolas.jpg" alt="Mockup Escolas e Contratos Digitais Joga" loading="lazy">
+          <span class="platform-media-badge">Contrato Digital + WhatsApp</span>
+        </div>
+        <div class="platform-showcase-info">
+          <span class="platform-tab-label">⚽ Escolas &amp; Clubes</span>
+          <h3>Contratos assinados no WhatsApp e inadimplência abaixo de 3%.</h3>
+          <p class="platform-lead-desc">Diga adeus à papelada física e cobrança desgastante. Dispare contratos com validade jurídica formal diretamente para o WhatsApp dos pais e automatize a régua de cobrança preventiva e por atraso.</p>
+          <ul class="platform-feature-bullets">
+            <li>
+              <span class="check-icon">✓</span>
+              <div><strong>Contratos Digitais via Clicksign:</strong> Envio imediato para o WhatsApp com assinatura eletrônica na tela do celular.</div>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <div><strong>Régua de Cobrança Preventiva:</strong> Mensagens amigáveis antes do vencimento com QR Code e Chave PIX Copia e Cola.</div>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <div><strong>Cobrança em Lote com Rastreamento:</strong> Notifique todos os atrasados em 1 clique e veja confirmação de leitura no WhatsApp.</div>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <div><strong>Chamada Digital &amp; Metodologia:</strong> Frequência do aluno em 10 segundos na beira da quadra e biblioteca de treinos em vídeo.</div>
+            </li>
+          </ul>
+          <div class="platform-cta-row">
+            <button class="btn btn-lime" data-open-lead-modal>Modernizar Minha Escolinha →</button>
+            <a href="escolas.html" class="btn btn-outline-blue">Ver tela exclusiva de Escolas</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3: TORNEIOS & COPAS -->
+      <div id="ptab-torneios" class="platform-tab-pane">
+        <div class="platform-showcase-media">
+          <img src="assets/mockup-torneios.jpg" alt="Mockup Torneios e Campeonatos Joga" loading="lazy">
+          <span class="platform-media-badge">Chaveamento Mata-mata + Classificação</span>
+        </div>
+        <div class="platform-showcase-info">
+          <span class="platform-tab-label">🏆 Torneios &amp; Copas</span>
+          <h3>Campeonatos inesquecíveis. Do sorteio dos grupos à grande final.</h3>
+          <p class="platform-lead-desc">Chega de tabelas manuais e discussões de regulamento. Crie copas e ligas com chaveamento de mata-mata automático, critérios de desempate oficiais e acompanhamento de jogos ao vivo no celular.</p>
+          <ul class="platform-feature-bullets">
+            <li>
+              <span class="check-icon">✓</span>
+              <div><strong>Mata-mata Série Ouro e Prata:</strong> Gere árvores de chaveamento em 1 clique mantendo todos os times engajados.</div>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <div><strong>Classificação com Desempate Automático:</strong> Pontos, saldo de gols, gols pró e vitórias calculados em tempo real.</div>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <div><strong>Página Pública do Evento:</strong> Times, atletas e torcedores acompanham placares, artilharia e tabelas no celular.</div>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <div><strong>Súmulas e Relatórios Oficiais:</strong> Impressão de súmulas prontas para a mesa de arbitragem e controle de cartões.</div>
+            </li>
+          </ul>
+          <div class="platform-cta-row">
+            <button class="btn btn-lime" data-open-lead-modal>Criar Meu Primeiro Torneio →</button>
+            <a href="torneios.html" class="btn btn-outline-blue">Ver tela exclusiva de Torneios</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 4: LOJA & UNIFORMES -->
+      <div id="ptab-loja" class="platform-tab-pane">
+        <div class="platform-showcase-media">
+          <img src="assets/mockup-loja.jpg" alt="Mockup Loja Oficial e Uniformes Joga" loading="lazy">
+          <span class="platform-media-badge">Vitrine Oficial + Variações P/M/G</span>
+        </div>
+        <div class="platform-showcase-info">
+          <span class="platform-tab-label">🛍️ Loja &amp; Uniformes</span>
+          <h3>Venda kits de uniforme e produtos oficiais da sua instituição.</h3>
+          <p class="platform-lead-desc">Monetize a marca do seu clube, escola ou arena. Monte uma loja virtual integrada, controle estoque por tamanho e venda o kit de boas-vindas diretamente no ato da matrícula ou reserva.</p>
+          <ul class="platform-feature-bullets">
+            <li>
+              <span class="check-icon">✓</span>
+              <div><strong>Vitrine Exclusiva da Sua Marca:</strong> Link personalizado para divulgar nas redes sociais e bio do Instagram.</div>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <div><strong>Grade Completa de Variações:</strong> Controle por tamanhos (Infantil ao GG), modelos e cores.</div>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <div><strong>Controle de Estoque em Tempo Real:</strong> Evite rupturas e saiba exatamente quando reabastecer com seu fornecedor.</div>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <div><strong>Checkout Ágil:</strong> Pagamento integrado no PIX e cartão sem necessidade de maquininha física.</div>
+            </li>
+          </ul>
+          <div class="platform-cta-row">
+            <button class="btn btn-lime" data-open-lead-modal>Ativar Minha Loja Esportiva →</button>
+            <a href="#pricing" class="btn btn-outline-blue">Ver Planos & Preços</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metrics Bar -->
+      <div class="platform-metrics-bar">
+        <div class="platform-metric-item">
+          <div class="platform-metric-value">+15.000</div>
+          <div class="platform-metric-label">Atletas Gerenciados</div>
+        </div>
+        <div class="platform-metric-item">
+          <div class="platform-metric-value">+60.000</div>
+          <div class="platform-metric-label">Horas de Quadra Reservadas</div>
+        </div>
+        <div class="platform-metric-item">
+          <div class="platform-metric-value">97,4%</div>
+          <div class="platform-metric-label">Taxa Média de Adimplência</div>
+        </div>
+        <div class="platform-metric-item">
+          <div class="platform-metric-value">100%</div>
+          <div class="platform-metric-label">Nuvem Segura &amp; Alta Disponibilidade</div>
         </div>
       </div>
     </div>

@@ -232,7 +232,7 @@ function initMobileMenu() {
 }
 
 /* ==========================================================================
-   6. SHOWCASE TABS (QUADRAS & TORNEIOS)
+   6. SHOWCASE TABS (QUADRAS, TORNEIOS & PLATFORM ECOSYSTEM)
    ========================================================================== */
 function initInteractiveShowcaseTabs() {
   const tabs = document.querySelectorAll('.court-filter-btn');
@@ -246,3 +246,13 @@ function initInteractiveShowcaseTabs() {
     });
   });
 }
+
+// Global switcher for Platform Showcase Tabs
+window.switchPlatformTab = function(tabId, btn) {
+  document.querySelectorAll('.platform-tab-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  document.querySelectorAll('.platform-tab-pane').forEach(pane => pane.classList.remove('active'));
+  const targetPane = document.getElementById('ptab-' + tabId);
+  if (targetPane) targetPane.classList.add('active');
+};
+
